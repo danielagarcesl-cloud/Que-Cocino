@@ -22,7 +22,7 @@ def limpiar(monkeypatch):
 
 def test_health():
     r = cliente_http.get("/health").json()
-    assert r["status"] == "ok" and r["version_prompt"] == "v1" and "Mariana Marin" in r["equipo"]
+    assert r["status"] == "ok" and r["version_prompt"] == "v3" and "Mariana Marin" in r["equipo"]
 
 
 def test_opciones():

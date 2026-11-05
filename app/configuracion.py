@@ -26,7 +26,7 @@ def modelo() -> str:
 
 
 def version_prompt_agente() -> str:
-    return _texto("VERSION_PROMPT_AGENTE", "v1")
+    return _texto("VERSION_PROMPT_AGENTE", "v3")
 
 
 def version_prompt_vision() -> str:
