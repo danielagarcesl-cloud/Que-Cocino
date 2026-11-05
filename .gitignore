@@ -1,0 +1,7 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+k8s/secret.yaml
+*.pyc
+.DS_Store

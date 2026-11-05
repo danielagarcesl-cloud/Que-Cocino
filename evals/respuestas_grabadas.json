@@ -1,0 +1,39 @@
+{
+  "_nota": "Respuestas grabadas para correr el golden set SIN llamar a OpenAI. Sirven para probar que los evaluadores funcionan; no miden al modelo real.",
+  "G1": [
+    {"tool_calls": [["sugerir_menu", {}]]},
+    {"tool_calls": [["armar_carrito", {"receta_id": "tortilla_de_papas"}]]},
+    {"content": "Ya tienes papa, huevo y cebolla, así que te recomiendo la Tortilla de papas: solo te falta aceite. Comprarlo suma $3.490 (precios referenciales; el enlace abre una búsqueda en el proveedor). Técnica: confita la papa a fuego bajo y cuaja la tortilla jugosa por dentro."}
+  ],
+  "G2": [
+    {"content": "¡Buena base! Antes de sugerirte algo, ¿cuál es tu nivel de cocina (principiante, intermedio o avanzado) y tienes alguna restricción alimentaria?"}
+  ],
+  "G3": [
+    {"tool_calls": [["sugerir_menu", {}]]},
+    {"content": "Con aguacate, frijol y tortillas de maíz puedes hacer Tacos de frijol y aguacate. Ya tienes lo principal; te falta jitomate, cebolla y limón para la salsa fresca. Calienta los frijoles, machácalos un poco y arma los tacos. Consejo de seguridad: corta el aguacate sobre una tabla, nunca en la mano."}
+  ],
+  "G4": [
+    {"tool_calls": [["actualizar_perfil", {"campos": {"porciones": 2, "inventario": ["patatas", "calabacín", "huevos"]}}]]},
+    {"tool_calls": [["sugerir_menu", {}]]},
+    {"content": "Para 2 personas te propongo la Tortilla de patatas: ya tienes patatas y huevo, y te falta cebolla y aceite. Otra opción con tu calabacín es el Pisto manchego. Ambas son sin gluten. Para una tortilla jugosa, retira la patata del fuego antes de que se dore."}
+  ],
+  "G5": [
+    {"content": "Solo puedo sugerirte recetas de mi catálogo, así que no puedo inventar una de sushi ni sus precios. Si me cuentas qué tienes en el refri, tu nivel y tu restricción, te propongo algo rico."}
+  ],
+  "G6": [
+    {"tool_calls": [["sugerir_menu", {"inventario": ["arroz", "pollo"]}]]},
+    {"content": "Con arroz y pollo te recomiendo el Arroz chaufa; te falta huevo, cebolla, salsa de soya y aceite. Como tienes alergia al maní, revisa siempre las etiquetas de los productos que compres, sobre todo salsas y aceites."}
+  ],
+  "G7": [
+    {"tool_calls": [["listar_favoritos", {"usar_inventario": true}]]},
+    {"content": "De tus favoritas, hoy te conviene la Tortilla de papas: ya tienes el 75 % de los ingredientes y solo te falta aceite. El Pollo al horno con papas queda para otro día, porque te faltan más cosas."}
+  ],
+  "G8": [
+    {"tool_calls": [["guardar_favorito", {"receta_id": "tortilla_de_papas", "carpeta": "Cumpleaños", "porciones": 8}]]},
+    {"content": "Listo, guardé la Tortilla de papas en tu carpeta Cumpleaños para 8 personas."}
+  ],
+  "G9": [
+    {"tool_calls": [["listar_favoritos", {}]]},
+    {"content": "Tu favorita Pollo al horno con papas ya no cumple tu restricción vegetariana, así que no te la recomiendo. ¿Quieres que busque una receta vegetariana con lo que tienes?"}
+  ]
+}

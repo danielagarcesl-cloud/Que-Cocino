@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: quecocino
+  labels: {app: quecocino}
+spec:
+  replicas: 2
+  selector:
+    matchLabels: {app: quecocino}
+  template:
+    metadata:
+      labels: {app: quecocino}
+    spec:
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+      containers:
+        - name: api
+          image: quecocino:1.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          env:
+            - {name: ENTORNO, value: kind}
+            - {name: PORT, value: "8080"}
+            - name: OPENAI_API_KEY
+              valueFrom:
+                secretKeyRef: {name: quecocino-secrets, key: OPENAI_API_KEY}
+          resources:
+            requests: {cpu: 100m, memory: 128Mi}
+            limits: {cpu: 500m, memory: 384Mi}   # la visión procesa imágenes
+          readinessProbe:
+            httpGet: {path: /health, port: 8080}
+            initialDelaySeconds: 3
+            periodSeconds: 10
+          livenessProbe:
+            httpGet: {path: /health, port: 8080}
+            initialDelaySeconds: 10
+            periodSeconds: 20

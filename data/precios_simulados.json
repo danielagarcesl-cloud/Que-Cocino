@@ -1,0 +1,827 @@
+{
+  "CL": {
+    "moneda": "CLP",
+    "items": {
+      "aceite": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "ml",
+        "precio": 3490,
+        "marca_referencial": "genérica"
+      },
+      "zapallo_italiano": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 1990,
+        "marca_referencial": "genérica"
+      },
+      "leche": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "ml",
+        "precio": 1190,
+        "marca_referencial": "genérica"
+      },
+      "harina": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 1290,
+        "marca_referencial": "genérica"
+      },
+      "papa": {
+        "envase_cantidad": 6,
+        "envase_unidad": "un",
+        "precio": 1290,
+        "marca_referencial": "genérica"
+      },
+      "huevo": {
+        "envase_cantidad": 12,
+        "envase_unidad": "un",
+        "precio": 3290,
+        "marca_referencial": "genérica"
+      },
+      "cebolla": {
+        "envase_cantidad": 3,
+        "envase_unidad": "un",
+        "precio": 990,
+        "marca_referencial": "genérica"
+      },
+      "queso": {
+        "envase_cantidad": 250,
+        "envase_unidad": "g",
+        "precio": 2990,
+        "marca_referencial": "genérica"
+      },
+      "pollo": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 4290,
+        "marca_referencial": "genérica"
+      },
+      "limon": {
+        "envase_cantidad": 4,
+        "envase_unidad": "un",
+        "precio": 890,
+        "marca_referencial": "genérica"
+      },
+      "ajo": {
+        "envase_cantidad": 10,
+        "envase_unidad": "un",
+        "precio": 690,
+        "marca_referencial": "genérica"
+      },
+      "palta": {
+        "envase_cantidad": 2,
+        "envase_unidad": "un",
+        "precio": 1990,
+        "marca_referencial": "genérica"
+      },
+      "poroto": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 2490,
+        "marca_referencial": "genérica"
+      },
+      "tortilla_maiz": {
+        "envase_cantidad": 30,
+        "envase_unidad": "un",
+        "precio": 1890,
+        "marca_referencial": "genérica"
+      },
+      "arroz": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 1390,
+        "marca_referencial": "genérica"
+      },
+      "lenteja": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 1990,
+        "marca_referencial": "genérica"
+      },
+      "tomate": {
+        "envase_cantidad": 4,
+        "envase_unidad": "un",
+        "precio": 1290,
+        "marca_referencial": "genérica"
+      },
+      "pimenton": {
+        "envase_cantidad": 1,
+        "envase_unidad": "un",
+        "precio": 690,
+        "marca_referencial": "genérica"
+      },
+      "zanahoria": {
+        "envase_cantidad": 4,
+        "envase_unidad": "un",
+        "precio": 690,
+        "marca_referencial": "genérica"
+      },
+      "choclo": {
+        "envase_cantidad": 500,
+        "envase_unidad": "g",
+        "precio": 1690,
+        "marca_referencial": "genérica"
+      },
+      "zapallo": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 1290,
+        "marca_referencial": "genérica"
+      },
+      "arveja": {
+        "envase_cantidad": 500,
+        "envase_unidad": "g",
+        "precio": 1490,
+        "marca_referencial": "genérica"
+      },
+      "carne_molida": {
+        "envase_cantidad": 500,
+        "envase_unidad": "g",
+        "precio": 4490,
+        "marca_referencial": "genérica"
+      },
+      "carne_vacuno": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 9990,
+        "marca_referencial": "genérica"
+      },
+      "platano": {
+        "envase_cantidad": 6,
+        "envase_unidad": "un",
+        "precio": 1290,
+        "marca_referencial": "genérica"
+      },
+      "avena": {
+        "envase_cantidad": 500,
+        "envase_unidad": "g",
+        "precio": 1490,
+        "marca_referencial": "genérica"
+      },
+      "pan": {
+        "envase_cantidad": 500,
+        "envase_unidad": "g",
+        "precio": 1490,
+        "marca_referencial": "genérica"
+      },
+      "fideos": {
+        "envase_cantidad": 400,
+        "envase_unidad": "g",
+        "precio": 990,
+        "marca_referencial": "genérica"
+      },
+      "salsa_soya": {
+        "envase_cantidad": 250,
+        "envase_unidad": "ml",
+        "precio": 1290,
+        "marca_referencial": "genérica"
+      },
+      "cilantro": {
+        "envase_cantidad": 50,
+        "envase_unidad": "g",
+        "precio": 590,
+        "marca_referencial": "genérica"
+      },
+      "aji": {
+        "envase_cantidad": 4,
+        "envase_unidad": "un",
+        "precio": 790,
+        "marca_referencial": "genérica"
+      },
+      "atun": {
+        "envase_cantidad": 160,
+        "envase_unidad": "g",
+        "precio": 1590,
+        "marca_referencial": "genérica"
+      },
+      "camaron": {
+        "envase_cantidad": 400,
+        "envase_unidad": "g",
+        "precio": 6490,
+        "marca_referencial": "genérica"
+      },
+      "crema": {
+        "envase_cantidad": 200,
+        "envase_unidad": "ml",
+        "precio": 1290,
+        "marca_referencial": "genérica"
+      },
+      "mantequilla": {
+        "envase_cantidad": 250,
+        "envase_unidad": "g",
+        "precio": 2890,
+        "marca_referencial": "genérica"
+      },
+      "harina_maiz": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 2190,
+        "marca_referencial": "genérica"
+      },
+      "quinoa": {
+        "envase_cantidad": 500,
+        "envase_unidad": "g",
+        "precio": 2790,
+        "marca_referencial": "genérica"
+      },
+      "garbanzo": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 2290,
+        "marca_referencial": "genérica"
+      },
+      "espinaca": {
+        "envase_cantidad": 300,
+        "envase_unidad": "g",
+        "precio": 1490,
+        "marca_referencial": "genérica"
+      },
+      "pepino": {
+        "envase_cantidad": 1,
+        "envase_unidad": "un",
+        "precio": 590,
+        "marca_referencial": "genérica"
+      },
+      "vinagre": {
+        "envase_cantidad": 500,
+        "envase_unidad": "ml",
+        "precio": 890,
+        "marca_referencial": "genérica"
+      },
+      "champinon": {
+        "envase_cantidad": 250,
+        "envase_unidad": "g",
+        "precio": 1690,
+        "marca_referencial": "genérica"
+      },
+      "pan_rallado": {
+        "envase_cantidad": 500,
+        "envase_unidad": "g",
+        "precio": 1290,
+        "marca_referencial": "genérica"
+      },
+      "tofu": {
+        "envase_cantidad": 400,
+        "envase_unidad": "g",
+        "precio": 2490,
+        "marca_referencial": "genérica"
+      },
+      "miel": {
+        "envase_cantidad": 500,
+        "envase_unidad": "ml",
+        "precio": 4990,
+        "marca_referencial": "genérica"
+      }
+    }
+  },
+  "MX": {
+    "moneda": "MXN",
+    "items": {
+      "aceite": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "ml",
+        "precio": 52.9,
+        "marca_referencial": "genérica"
+      },
+      "zapallo_italiano": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 34.9,
+        "marca_referencial": "genérica"
+      },
+      "leche": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "ml",
+        "precio": 28.5,
+        "marca_referencial": "genérica"
+      },
+      "harina": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 24.9,
+        "marca_referencial": "genérica"
+      },
+      "papa": {
+        "envase_cantidad": 6,
+        "envase_unidad": "un",
+        "precio": 32.0,
+        "marca_referencial": "genérica"
+      },
+      "huevo": {
+        "envase_cantidad": 12,
+        "envase_unidad": "un",
+        "precio": 49.9,
+        "marca_referencial": "genérica"
+      },
+      "cebolla": {
+        "envase_cantidad": 3,
+        "envase_unidad": "un",
+        "precio": 18.0,
+        "marca_referencial": "genérica"
+      },
+      "queso": {
+        "envase_cantidad": 250,
+        "envase_unidad": "g",
+        "precio": 59.9,
+        "marca_referencial": "genérica"
+      },
+      "pollo": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 119.0,
+        "marca_referencial": "genérica"
+      },
+      "limon": {
+        "envase_cantidad": 4,
+        "envase_unidad": "un",
+        "precio": 15.0,
+        "marca_referencial": "genérica"
+      },
+      "ajo": {
+        "envase_cantidad": 10,
+        "envase_unidad": "un",
+        "precio": 12.0,
+        "marca_referencial": "genérica"
+      },
+      "palta": {
+        "envase_cantidad": 2,
+        "envase_unidad": "un",
+        "precio": 39.0,
+        "marca_referencial": "genérica"
+      },
+      "poroto": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 38.0,
+        "marca_referencial": "genérica"
+      },
+      "tortilla_maiz": {
+        "envase_cantidad": 30,
+        "envase_unidad": "un",
+        "precio": 24.0,
+        "marca_referencial": "genérica"
+      },
+      "arroz": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 29.9,
+        "marca_referencial": "genérica"
+      },
+      "lenteja": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 36.0,
+        "marca_referencial": "genérica"
+      },
+      "tomate": {
+        "envase_cantidad": 4,
+        "envase_unidad": "un",
+        "precio": 22.0,
+        "marca_referencial": "genérica"
+      },
+      "pimenton": {
+        "envase_cantidad": 1,
+        "envase_unidad": "un",
+        "precio": 14.0,
+        "marca_referencial": "genérica"
+      },
+      "zanahoria": {
+        "envase_cantidad": 4,
+        "envase_unidad": "un",
+        "precio": 12.0,
+        "marca_referencial": "genérica"
+      },
+      "choclo": {
+        "envase_cantidad": 500,
+        "envase_unidad": "g",
+        "precio": 26.0,
+        "marca_referencial": "genérica"
+      },
+      "zapallo": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 25.0,
+        "marca_referencial": "genérica"
+      },
+      "arveja": {
+        "envase_cantidad": 500,
+        "envase_unidad": "g",
+        "precio": 22.0,
+        "marca_referencial": "genérica"
+      },
+      "carne_molida": {
+        "envase_cantidad": 500,
+        "envase_unidad": "g",
+        "precio": 89.0,
+        "marca_referencial": "genérica"
+      },
+      "carne_vacuno": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 219.0,
+        "marca_referencial": "genérica"
+      },
+      "platano": {
+        "envase_cantidad": 6,
+        "envase_unidad": "un",
+        "precio": 21.0,
+        "marca_referencial": "genérica"
+      },
+      "avena": {
+        "envase_cantidad": 500,
+        "envase_unidad": "g",
+        "precio": 29.0,
+        "marca_referencial": "genérica"
+      },
+      "pan": {
+        "envase_cantidad": 500,
+        "envase_unidad": "g",
+        "precio": 35.0,
+        "marca_referencial": "genérica"
+      },
+      "fideos": {
+        "envase_cantidad": 400,
+        "envase_unidad": "g",
+        "precio": 16.0,
+        "marca_referencial": "genérica"
+      },
+      "salsa_soya": {
+        "envase_cantidad": 250,
+        "envase_unidad": "ml",
+        "precio": 32.0,
+        "marca_referencial": "genérica"
+      },
+      "cilantro": {
+        "envase_cantidad": 50,
+        "envase_unidad": "g",
+        "precio": 8.0,
+        "marca_referencial": "genérica"
+      },
+      "aji": {
+        "envase_cantidad": 4,
+        "envase_unidad": "un",
+        "precio": 10.0,
+        "marca_referencial": "genérica"
+      },
+      "atun": {
+        "envase_cantidad": 160,
+        "envase_unidad": "g",
+        "precio": 26.0,
+        "marca_referencial": "genérica"
+      },
+      "camaron": {
+        "envase_cantidad": 400,
+        "envase_unidad": "g",
+        "precio": 159.0,
+        "marca_referencial": "genérica"
+      },
+      "crema": {
+        "envase_cantidad": 200,
+        "envase_unidad": "ml",
+        "precio": 22.0,
+        "marca_referencial": "genérica"
+      },
+      "mantequilla": {
+        "envase_cantidad": 250,
+        "envase_unidad": "g",
+        "precio": 52.0,
+        "marca_referencial": "genérica"
+      },
+      "harina_maiz": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 42.0,
+        "marca_referencial": "genérica"
+      },
+      "quinoa": {
+        "envase_cantidad": 500,
+        "envase_unidad": "g",
+        "precio": 59.0,
+        "marca_referencial": "genérica"
+      },
+      "garbanzo": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 39.0,
+        "marca_referencial": "genérica"
+      },
+      "espinaca": {
+        "envase_cantidad": 300,
+        "envase_unidad": "g",
+        "precio": 24.0,
+        "marca_referencial": "genérica"
+      },
+      "pepino": {
+        "envase_cantidad": 1,
+        "envase_unidad": "un",
+        "precio": 9.0,
+        "marca_referencial": "genérica"
+      },
+      "vinagre": {
+        "envase_cantidad": 500,
+        "envase_unidad": "ml",
+        "precio": 18.0,
+        "marca_referencial": "genérica"
+      },
+      "champinon": {
+        "envase_cantidad": 250,
+        "envase_unidad": "g",
+        "precio": 32.0,
+        "marca_referencial": "genérica"
+      },
+      "pan_rallado": {
+        "envase_cantidad": 500,
+        "envase_unidad": "g",
+        "precio": 25.0,
+        "marca_referencial": "genérica"
+      },
+      "tofu": {
+        "envase_cantidad": 400,
+        "envase_unidad": "g",
+        "precio": 45.0,
+        "marca_referencial": "genérica"
+      },
+      "miel": {
+        "envase_cantidad": 500,
+        "envase_unidad": "ml",
+        "precio": 89.0,
+        "marca_referencial": "genérica"
+      }
+    }
+  },
+  "ES": {
+    "moneda": "EUR",
+    "items": {
+      "aceite": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "ml",
+        "precio": 3.49,
+        "marca_referencial": "genérica"
+      },
+      "zapallo_italiano": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 2.19,
+        "marca_referencial": "genérica"
+      },
+      "leche": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "ml",
+        "precio": 1.05,
+        "marca_referencial": "genérica"
+      },
+      "harina": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 0.95,
+        "marca_referencial": "genérica"
+      },
+      "papa": {
+        "envase_cantidad": 6,
+        "envase_unidad": "un",
+        "precio": 1.8,
+        "marca_referencial": "genérica"
+      },
+      "huevo": {
+        "envase_cantidad": 12,
+        "envase_unidad": "un",
+        "precio": 2.59,
+        "marca_referencial": "genérica"
+      },
+      "cebolla": {
+        "envase_cantidad": 3,
+        "envase_unidad": "un",
+        "precio": 0.99,
+        "marca_referencial": "genérica"
+      },
+      "queso": {
+        "envase_cantidad": 250,
+        "envase_unidad": "g",
+        "precio": 2.65,
+        "marca_referencial": "genérica"
+      },
+      "pollo": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 6.49,
+        "marca_referencial": "genérica"
+      },
+      "limon": {
+        "envase_cantidad": 4,
+        "envase_unidad": "un",
+        "precio": 1.2,
+        "marca_referencial": "genérica"
+      },
+      "ajo": {
+        "envase_cantidad": 10,
+        "envase_unidad": "un",
+        "precio": 0.85,
+        "marca_referencial": "genérica"
+      },
+      "palta": {
+        "envase_cantidad": 2,
+        "envase_unidad": "un",
+        "precio": 2.4,
+        "marca_referencial": "genérica"
+      },
+      "poroto": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 2.2,
+        "marca_referencial": "genérica"
+      },
+      "tortilla_maiz": {
+        "envase_cantidad": 30,
+        "envase_unidad": "un",
+        "precio": 2.99,
+        "marca_referencial": "genérica"
+      },
+      "arroz": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 1.29,
+        "marca_referencial": "genérica"
+      },
+      "lenteja": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 1.85,
+        "marca_referencial": "genérica"
+      },
+      "tomate": {
+        "envase_cantidad": 4,
+        "envase_unidad": "un",
+        "precio": 1.6,
+        "marca_referencial": "genérica"
+      },
+      "pimenton": {
+        "envase_cantidad": 1,
+        "envase_unidad": "un",
+        "precio": 0.75,
+        "marca_referencial": "genérica"
+      },
+      "zanahoria": {
+        "envase_cantidad": 4,
+        "envase_unidad": "un",
+        "precio": 0.8,
+        "marca_referencial": "genérica"
+      },
+      "choclo": {
+        "envase_cantidad": 500,
+        "envase_unidad": "g",
+        "precio": 1.49,
+        "marca_referencial": "genérica"
+      },
+      "zapallo": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 1.3,
+        "marca_referencial": "genérica"
+      },
+      "arveja": {
+        "envase_cantidad": 500,
+        "envase_unidad": "g",
+        "precio": 1.35,
+        "marca_referencial": "genérica"
+      },
+      "carne_molida": {
+        "envase_cantidad": 500,
+        "envase_unidad": "g",
+        "precio": 4.2,
+        "marca_referencial": "genérica"
+      },
+      "carne_vacuno": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 12.9,
+        "marca_referencial": "genérica"
+      },
+      "platano": {
+        "envase_cantidad": 6,
+        "envase_unidad": "un",
+        "precio": 1.4,
+        "marca_referencial": "genérica"
+      },
+      "avena": {
+        "envase_cantidad": 500,
+        "envase_unidad": "g",
+        "precio": 1.25,
+        "marca_referencial": "genérica"
+      },
+      "pan": {
+        "envase_cantidad": 500,
+        "envase_unidad": "g",
+        "precio": 1.6,
+        "marca_referencial": "genérica"
+      },
+      "fideos": {
+        "envase_cantidad": 400,
+        "envase_unidad": "g",
+        "precio": 0.89,
+        "marca_referencial": "genérica"
+      },
+      "salsa_soya": {
+        "envase_cantidad": 250,
+        "envase_unidad": "ml",
+        "precio": 1.9,
+        "marca_referencial": "genérica"
+      },
+      "cilantro": {
+        "envase_cantidad": 50,
+        "envase_unidad": "g",
+        "precio": 0.99,
+        "marca_referencial": "genérica"
+      },
+      "aji": {
+        "envase_cantidad": 4,
+        "envase_unidad": "un",
+        "precio": 1.1,
+        "marca_referencial": "genérica"
+      },
+      "atun": {
+        "envase_cantidad": 160,
+        "envase_unidad": "g",
+        "precio": 1.3,
+        "marca_referencial": "genérica"
+      },
+      "camaron": {
+        "envase_cantidad": 400,
+        "envase_unidad": "g",
+        "precio": 7.9,
+        "marca_referencial": "genérica"
+      },
+      "crema": {
+        "envase_cantidad": 200,
+        "envase_unidad": "ml",
+        "precio": 1.25,
+        "marca_referencial": "genérica"
+      },
+      "mantequilla": {
+        "envase_cantidad": 250,
+        "envase_unidad": "g",
+        "precio": 2.5,
+        "marca_referencial": "genérica"
+      },
+      "harina_maiz": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 2.75,
+        "marca_referencial": "genérica"
+      },
+      "quinoa": {
+        "envase_cantidad": 500,
+        "envase_unidad": "g",
+        "precio": 3.2,
+        "marca_referencial": "genérica"
+      },
+      "garbanzo": {
+        "envase_cantidad": 1000,
+        "envase_unidad": "g",
+        "precio": 1.95,
+        "marca_referencial": "genérica"
+      },
+      "espinaca": {
+        "envase_cantidad": 300,
+        "envase_unidad": "g",
+        "precio": 1.5,
+        "marca_referencial": "genérica"
+      },
+      "pepino": {
+        "envase_cantidad": 1,
+        "envase_unidad": "un",
+        "precio": 0.6,
+        "marca_referencial": "genérica"
+      },
+      "vinagre": {
+        "envase_cantidad": 500,
+        "envase_unidad": "ml",
+        "precio": 0.85,
+        "marca_referencial": "genérica"
+      },
+      "champinon": {
+        "envase_cantidad": 250,
+        "envase_unidad": "g",
+        "precio": 1.65,
+        "marca_referencial": "genérica"
+      },
+      "pan_rallado": {
+        "envase_cantidad": 500,
+        "envase_unidad": "g",
+        "precio": 1.1,
+        "marca_referencial": "genérica"
+      },
+      "tofu": {
+        "envase_cantidad": 400,
+        "envase_unidad": "g",
+        "precio": 2.1,
+        "marca_referencial": "genérica"
+      },
+      "miel": {
+        "envase_cantidad": 500,
+        "envase_unidad": "ml",
+        "precio": 4.5,
+        "marca_referencial": "genérica"
+      }
+    }
+  }
+}

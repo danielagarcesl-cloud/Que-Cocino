@@ -1,0 +1,12 @@
+.git
+.github
+.venv
+__pycache__
+.pytest_cache
+.env
+tests/
+evals/
+k8s/
+docs/
+*.md
+!prompts/*.md

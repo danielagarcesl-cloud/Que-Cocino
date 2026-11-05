@@ -1,0 +1,54 @@
+# Plantillas de enlaces de búsqueda por proveedor y país.
+# {consulta} se reemplaza por el nombre local del ingrediente, codificado en URL.
+#
+# IMPORTANTE (regla del prompt maestro, sección 6.8):
+# cada plantilla debe verificarse A MANO en un navegador antes de publicar.
+# Mientras "verificado" sea false, la API lo informa en la respuesta y la interfaz muestra un aviso.
+# Al verificar: cambia verificado a true y anota la fecha en "verificado_en" (AAAA-MM-DD).
+# Si un proveedor no opera en un país o el enlace no funciona, borra esa línea.
+
+simulado:
+  nombre: Precios referenciales (simulado)
+  tipo_integracion: simulado
+
+jumbo:
+  nombre: Jumbo
+  tipo_integracion: enlace_busqueda
+  verificado: false
+  verificado_en: null
+  plantillas:
+    CL: "https://www.jumbo.cl/busqueda?ft={consulta}"
+
+rappi:
+  nombre: Rappi
+  tipo_integracion: enlace_busqueda
+  verificado: false
+  verificado_en: null
+  plantillas:
+    CL: "https://www.rappi.cl/search?query={consulta}"
+    AR: "https://www.rappi.com.ar/search?query={consulta}"
+    MX: "https://www.rappi.com.mx/search?query={consulta}"
+    CO: "https://www.rappi.com.co/search?query={consulta}"
+    PE: "https://www.rappi.com.pe/search?query={consulta}"
+
+pedidosya:
+  nombre: PedidosYa
+  tipo_integracion: enlace_busqueda
+  verificado: false
+  verificado_en: null
+  plantillas:
+    CL: "https://www.pedidosya.cl/search?query={consulta}"
+    AR: "https://www.pedidosya.com.ar/search?query={consulta}"
+    PE: "https://www.pedidosya.com.pe/search?query={consulta}"
+
+ubereats:
+  nombre: Uber Eats
+  tipo_integracion: enlace_busqueda
+  verificado: false
+  verificado_en: null
+  plantillas:
+    CL: "https://www.ubereats.com/cl/search?q={consulta}"
+    MX: "https://www.ubereats.com/mx/search?q={consulta}"
+    CO: "https://www.ubereats.com/co/search?q={consulta}"
+    ES: "https://www.ubereats.com/es/search?q={consulta}"
+    US: "https://www.ubereats.com/search?q={consulta}"

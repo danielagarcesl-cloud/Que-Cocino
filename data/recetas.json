@@ -1,0 +1,1629 @@
+[
+  {
+    "id": "tortilla_de_papas",
+    "nombre": "Tortilla de papas",
+    "nombres_alternativos": {
+      "ES": "Tortilla de patatas"
+    },
+    "cocina_de_origen": "ES",
+    "nivel": "principiante",
+    "tiempo_minutos": 30,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "papa",
+        "cantidad": 4,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "huevo",
+        "cantidad": 4,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "cebolla",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 50,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 5,
+        "unidad": "g"
+      }
+    ],
+    "pasos": [
+      "Pela y corta las papas y la cebolla en láminas finas.",
+      "Fríelas a fuego medio en el aceite hasta que estén blandas, sin dorar.",
+      "Bate los huevos con la sal y mezcla con las papas escurridas.",
+      "Cuaja en un sartén por ambos lados; usa un plato para darla vuelta."
+    ]
+  },
+  {
+    "id": "pisto_manchego",
+    "nombre": "Pisto manchego",
+    "nombres_alternativos": {},
+    "cocina_de_origen": "ES",
+    "nivel": "intermedio",
+    "tiempo_minutos": 45,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "zapallo_italiano",
+        "cantidad": 400,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "pimenton",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "tomate",
+        "cantidad": 4,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "cebolla",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 40,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 5,
+        "unidad": "g"
+      }
+    ],
+    "pasos": [
+      "Pica la cebolla y el pimiento y sofríelos en el aceite.",
+      "Agrega el zapallo italiano en cubos y cocina 10 minutos.",
+      "Suma el tomate rallado y cocina a fuego bajo 20 minutos.",
+      "Ajusta la sal y sirve tibio."
+    ]
+  },
+  {
+    "id": "gazpacho",
+    "nombre": "Gazpacho",
+    "nombres_alternativos": {},
+    "cocina_de_origen": "ES",
+    "nivel": "principiante",
+    "tiempo_minutos": 15,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "tomate",
+        "cantidad": 6,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "pepino",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "pimenton",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "ajo",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 50,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "vinagre",
+        "cantidad": 20,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "pan",
+        "cantidad": 50,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 5,
+        "unidad": "g"
+      }
+    ],
+    "pasos": [
+      "Lava y trocea las verduras.",
+      "Licúa todo con el pan remojado, el aceite y el vinagre.",
+      "Cuela si lo prefieres más fino y enfría al menos 1 hora."
+    ]
+  },
+  {
+    "id": "lentejas_guisadas",
+    "nombre": "Lentejas guisadas",
+    "nombres_alternativos": {},
+    "cocina_de_origen": "ES",
+    "nivel": "principiante",
+    "tiempo_minutos": 50,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "lenteja",
+        "cantidad": 300,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "zanahoria",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "cebolla",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "papa",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "ajo",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 30,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 5,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "agua",
+        "cantidad": 1500,
+        "unidad": "ml"
+      }
+    ],
+    "pasos": [
+      "Sofríe la cebolla, el ajo y la zanahoria picados.",
+      "Agrega las lentejas lavadas, la papa en cubos y el agua.",
+      "Cocina a fuego medio 35 a 40 minutos hasta que estén tiernas.",
+      "Ajusta la sal."
+    ]
+  },
+  {
+    "id": "garbanzos_con_espinaca",
+    "nombre": "Garbanzos con espinaca",
+    "nombres_alternativos": {},
+    "cocina_de_origen": "ES",
+    "nivel": "intermedio",
+    "tiempo_minutos": 30,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "garbanzo",
+        "cantidad": 400,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "espinaca",
+        "cantidad": 300,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "ajo",
+        "cantidad": 3,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 40,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "pan",
+        "cantidad": 40,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 5,
+        "unidad": "g"
+      }
+    ],
+    "pasos": [
+      "Dora el pan y el ajo en el aceite y machácalos.",
+      "Saltea la espinaca hasta que reduzca.",
+      "Agrega los garbanzos cocidos y el majado; cocina 10 minutos."
+    ]
+  },
+  {
+    "id": "camarones_al_ajillo",
+    "nombre": "Camarones al ajillo",
+    "nombres_alternativos": {
+      "ES": "Gambas al ajillo"
+    },
+    "cocina_de_origen": "ES",
+    "nivel": "intermedio",
+    "tiempo_minutos": 20,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "camaron",
+        "cantidad": 500,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "ajo",
+        "cantidad": 4,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "aji",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 80,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "limon",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 3,
+        "unidad": "g"
+      }
+    ],
+    "pasos": [
+      "Calienta el aceite con el ajo laminado y el ají.",
+      "Agrega los camarones y cocina 2 a 3 minutos por lado.",
+      "Termina con jugo de limón y sal."
+    ]
+  },
+  {
+    "id": "champinones_al_ajillo",
+    "nombre": "Champiñones al ajillo",
+    "nombres_alternativos": {},
+    "cocina_de_origen": "ES",
+    "nivel": "principiante",
+    "tiempo_minutos": 20,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "champinon",
+        "cantidad": 400,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "ajo",
+        "cantidad": 3,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 40,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "pan",
+        "cantidad": 80,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 3,
+        "unidad": "g"
+      }
+    ],
+    "pasos": [
+      "Limpia y lamina los champiñones.",
+      "Saltéalos en el aceite con el ajo picado hasta dorar.",
+      "Sirve con pan tostado."
+    ]
+  },
+  {
+    "id": "budin_de_zapallo_italiano",
+    "nombre": "Budín de zapallo italiano",
+    "nombres_alternativos": {
+      "ES": "Pastel de calabacín",
+      "MX": "Budín de calabacita"
+    },
+    "cocina_de_origen": "CL",
+    "nivel": "intermedio",
+    "tiempo_minutos": 45,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "zapallo_italiano",
+        "cantidad": 500,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "huevo",
+        "cantidad": 3,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "queso",
+        "cantidad": 150,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "leche",
+        "cantidad": 250,
+        "unidad": "ml"
+      }
+    ],
+    "pasos": [
+      "Ralla el zapallo italiano y estrújalo para quitar el agua.",
+      "Mezcla con los huevos batidos, la leche y la mitad del queso.",
+      "Vierte en una fuente, cubre con el resto del queso y hornea 30 minutos a 180 °C."
+    ]
+  },
+  {
+    "id": "charquican",
+    "nombre": "Charquicán",
+    "nombres_alternativos": {},
+    "cocina_de_origen": "CL",
+    "nivel": "intermedio",
+    "tiempo_minutos": 45,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "carne_molida",
+        "cantidad": 300,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "papa",
+        "cantidad": 4,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "zapallo",
+        "cantidad": 400,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "choclo",
+        "cantidad": 200,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "arveja",
+        "cantidad": 150,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "cebolla",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 30,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 5,
+        "unidad": "g"
+      }
+    ],
+    "pasos": [
+      "Sofríe la cebolla y dora la carne.",
+      "Agrega la papa y el zapallo en cubos con un poco de agua.",
+      "Cocina 25 minutos, suma choclo y arvejas y machaca suave."
+    ]
+  },
+  {
+    "id": "porotos_con_riendas",
+    "nombre": "Porotos con riendas",
+    "nombres_alternativos": {
+      "MX": "Frijoles con pasta"
+    },
+    "cocina_de_origen": "CL",
+    "nivel": "intermedio",
+    "tiempo_minutos": 90,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "poroto",
+        "cantidad": 400,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "fideos",
+        "cantidad": 150,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "zapallo",
+        "cantidad": 300,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "cebolla",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 30,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 5,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "agua",
+        "cantidad": 2000,
+        "unidad": "ml"
+      }
+    ],
+    "pasos": [
+      "Remoja los porotos la noche anterior.",
+      "Cuécelos en agua con el zapallo hasta que estén blandos.",
+      "Agrega un sofrito de cebolla y los fideos; cocina 10 minutos más."
+    ]
+  },
+  {
+    "id": "pollo_al_horno_con_papas",
+    "nombre": "Pollo al horno con papas",
+    "nombres_alternativos": {
+      "ES": "Pollo al horno con patatas"
+    },
+    "cocina_de_origen": "CL",
+    "nivel": "principiante",
+    "tiempo_minutos": 60,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "pollo",
+        "cantidad": 1,
+        "unidad": "kg"
+      },
+      {
+        "ingrediente_id": "papa",
+        "cantidad": 6,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "limon",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "ajo",
+        "cantidad": 3,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 8,
+        "unidad": "g"
+      }
+    ],
+    "pasos": [
+      "Adoba el pollo con ajo, limón y sal.",
+      "Ponlo en una fuente con las papas en gajos.",
+      "Hornea a 200 °C por 50 minutos; revisa que el jugo del pollo salga transparente."
+    ]
+  },
+  {
+    "id": "pastel_de_choclo",
+    "nombre": "Pastel de choclo",
+    "nombres_alternativos": {},
+    "cocina_de_origen": "CL",
+    "nivel": "avanzado",
+    "tiempo_minutos": 90,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "choclo",
+        "cantidad": 800,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "carne_molida",
+        "cantidad": 400,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "cebolla",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "huevo",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "leche",
+        "cantidad": 200,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 30,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 6,
+        "unidad": "g"
+      }
+    ],
+    "pasos": [
+      "Prepara un pino con cebolla y carne.",
+      "Muele el choclo y cocínalo con la leche hasta espesar.",
+      "Arma en fuente: pino, huevo duro y pastelera encima.",
+      "Hornea a 200 °C hasta dorar."
+    ]
+  },
+  {
+    "id": "quesadillas",
+    "nombre": "Quesadillas",
+    "nombres_alternativos": {},
+    "cocina_de_origen": "MX",
+    "nivel": "principiante",
+    "tiempo_minutos": 15,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "tortilla_maiz",
+        "cantidad": 8,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "queso",
+        "cantidad": 200,
+        "unidad": "g"
+      }
+    ],
+    "pasos": [
+      "Pon queso sobre media tortilla y dóblala.",
+      "Calienta en un sartén seco hasta que el queso se derrita, 2 minutos por lado."
+    ]
+  },
+  {
+    "id": "chilaquiles",
+    "nombre": "Chilaquiles rojos",
+    "nombres_alternativos": {},
+    "cocina_de_origen": "MX",
+    "nivel": "intermedio",
+    "tiempo_minutos": 30,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "tortilla_maiz",
+        "cantidad": 12,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "tomate",
+        "cantidad": 4,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "cebolla",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "ajo",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "aji",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "crema",
+        "cantidad": 100,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "queso",
+        "cantidad": 100,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 60,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 4,
+        "unidad": "g"
+      }
+    ],
+    "pasos": [
+      "Corta las tortillas en triángulos y fríelas hasta que estén crujientes.",
+      "Licúa tomate, cebolla, ajo y chile; cocina la salsa 10 minutos.",
+      "Baña los totopos en la salsa y sirve con crema y queso."
+    ]
+  },
+  {
+    "id": "huevos_rancheros",
+    "nombre": "Huevos rancheros",
+    "nombres_alternativos": {},
+    "cocina_de_origen": "MX",
+    "nivel": "principiante",
+    "tiempo_minutos": 20,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "huevo",
+        "cantidad": 4,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "tortilla_maiz",
+        "cantidad": 4,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "tomate",
+        "cantidad": 3,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "cebolla",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "aji",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 30,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 3,
+        "unidad": "g"
+      }
+    ],
+    "pasos": [
+      "Prepara una salsa cocida de tomate, cebolla y chile.",
+      "Fríe los huevos y calienta las tortillas.",
+      "Sirve cada huevo sobre una tortilla con salsa."
+    ]
+  },
+  {
+    "id": "tacos_de_frijol_y_palta",
+    "nombre": "Tacos de frijol y palta",
+    "nombres_alternativos": {
+      "MX": "Tacos de frijol y aguacate",
+      "ES": "Tacos de alubias y aguacate",
+      "CO": "Tacos de frijol y aguacate",
+      "US": "Tacos de frijol y aguacate"
+    },
+    "cocina_de_origen": "MX",
+    "nivel": "principiante",
+    "tiempo_minutos": 20,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "tortilla_maiz",
+        "cantidad": 8,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "poroto",
+        "cantidad": 300,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "palta",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "tomate",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "cebolla",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "limon",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 3,
+        "unidad": "g"
+      }
+    ],
+    "pasos": [
+      "Calienta los frijoles cocidos y machácalos un poco.",
+      "Pica tomate y cebolla; aliña con limón y sal.",
+      "Rellena las tortillas con frijoles, palta y la salsa fresca."
+    ]
+  },
+  {
+    "id": "guacamole",
+    "nombre": "Guacamole",
+    "nombres_alternativos": {},
+    "cocina_de_origen": "MX",
+    "nivel": "principiante",
+    "tiempo_minutos": 10,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "palta",
+        "cantidad": 3,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "tomate",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "cebolla",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "limon",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "cilantro",
+        "cantidad": 10,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 3,
+        "unidad": "g"
+      }
+    ],
+    "pasos": [
+      "Machaca la palta con un tenedor.",
+      "Agrega tomate, cebolla y cilantro picados finos.",
+      "Aliña con limón y sal; sirve de inmediato."
+    ]
+  },
+  {
+    "id": "arroz_chaufa",
+    "nombre": "Arroz chaufa",
+    "nombres_alternativos": {},
+    "cocina_de_origen": "PE",
+    "nivel": "intermedio",
+    "tiempo_minutos": 30,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "arroz",
+        "cantidad": 400,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "huevo",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "pollo",
+        "cantidad": 300,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "cebolla",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "salsa_soya",
+        "cantidad": 40,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 40,
+        "unidad": "ml"
+      }
+    ],
+    "pasos": [
+      "Usa arroz cocido del día anterior.",
+      "Saltea el pollo en trozos a fuego alto.",
+      "Agrega la cebolla, el huevo revuelto y el arroz; termina con salsa de soya."
+    ]
+  },
+  {
+    "id": "ensalada_de_quinoa",
+    "nombre": "Ensalada de quinoa",
+    "nombres_alternativos": {},
+    "cocina_de_origen": "PE",
+    "nivel": "principiante",
+    "tiempo_minutos": 25,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "quinoa",
+        "cantidad": 250,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "tomate",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "pepino",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "palta",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "limon",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 30,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 3,
+        "unidad": "g"
+      }
+    ],
+    "pasos": [
+      "Lava la quinoa y cuécela 15 minutos; deja enfriar.",
+      "Pica tomate, pepino y palta.",
+      "Mezcla todo y aliña con limón, aceite y sal."
+    ]
+  },
+  {
+    "id": "causa_de_atun",
+    "nombre": "Causa de atún",
+    "nombres_alternativos": {},
+    "cocina_de_origen": "PE",
+    "nivel": "avanzado",
+    "tiempo_minutos": 60,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "papa",
+        "cantidad": 6,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "atun",
+        "cantidad": 300,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "palta",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "limon",
+        "cantidad": 3,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "aji",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 50,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "cebolla",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 5,
+        "unidad": "g"
+      }
+    ],
+    "pasos": [
+      "Cuece las papas, prénsalas y aliña con ají, limón, aceite y sal.",
+      "Mezcla el atún con cebolla picada.",
+      "Arma capas: papa, atún, palta y papa; refrigera 30 minutos."
+    ]
+  },
+  {
+    "id": "lomo_saltado",
+    "nombre": "Lomo saltado",
+    "nombres_alternativos": {},
+    "cocina_de_origen": "PE",
+    "nivel": "avanzado",
+    "tiempo_minutos": 40,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "carne_vacuno",
+        "cantidad": 600,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "papa",
+        "cantidad": 4,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "tomate",
+        "cantidad": 3,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "cebolla",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "salsa_soya",
+        "cantidad": 40,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "vinagre",
+        "cantidad": 15,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 80,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "arroz",
+        "cantidad": 300,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 5,
+        "unidad": "g"
+      }
+    ],
+    "pasos": [
+      "Fríe las papas en bastones.",
+      "Saltea la carne a fuego muy alto en tandas.",
+      "Agrega cebolla y tomate en gajos, sillao y vinagre; 1 minuto.",
+      "Sirve con las papas y arroz blanco."
+    ]
+  },
+  {
+    "id": "tofu_salteado_con_verduras",
+    "nombre": "Tofu salteado con verduras",
+    "nombres_alternativos": {},
+    "cocina_de_origen": "PE",
+    "nivel": "intermedio",
+    "tiempo_minutos": 25,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "tofu",
+        "cantidad": 400,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "zapallo_italiano",
+        "cantidad": 300,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "zanahoria",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "pimenton",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "salsa_soya",
+        "cantidad": 40,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "ajo",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 30,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "arroz",
+        "cantidad": 300,
+        "unidad": "g"
+      }
+    ],
+    "pasos": [
+      "Dora el tofu en cubos y reserva.",
+      "Saltea las verduras en tiras con el ajo a fuego alto.",
+      "Vuelve a agregar el tofu y la salsa de soya; sirve con arroz."
+    ]
+  },
+  {
+    "id": "arepas_con_queso",
+    "nombre": "Arepas con queso",
+    "nombres_alternativos": {},
+    "cocina_de_origen": "CO",
+    "nivel": "intermedio",
+    "tiempo_minutos": 30,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "harina_maiz",
+        "cantidad": 400,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "queso",
+        "cantidad": 200,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "mantequilla",
+        "cantidad": 30,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "agua",
+        "cantidad": 500,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 5,
+        "unidad": "g"
+      }
+    ],
+    "pasos": [
+      "Mezcla la harina con agua tibia y sal hasta formar una masa suave.",
+      "Forma discos y cocínalos en sartén 6 minutos por lado.",
+      "Ábrelas y rellena con mantequilla y queso."
+    ]
+  },
+  {
+    "id": "arroz_con_pollo",
+    "nombre": "Arroz con pollo",
+    "nombres_alternativos": {},
+    "cocina_de_origen": "CO",
+    "nivel": "intermedio",
+    "tiempo_minutos": 50,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "arroz",
+        "cantidad": 400,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "pollo",
+        "cantidad": 600,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "zanahoria",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "arveja",
+        "cantidad": 150,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "pimenton",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "cebolla",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "ajo",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 40,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 6,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "agua",
+        "cantidad": 900,
+        "unidad": "ml"
+      }
+    ],
+    "pasos": [
+      "Dora el pollo en trozos y reserva.",
+      "Sofríe cebolla, ajo y pimentón; agrega el arroz.",
+      "Suma agua, pollo, zanahoria y arvejas; cocina tapado 20 minutos."
+    ]
+  },
+  {
+    "id": "frijoles_guisados",
+    "nombre": "Frijoles guisados",
+    "nombres_alternativos": {
+      "CL": "Porotos guisados",
+      "ES": "Alubias guisadas"
+    },
+    "cocina_de_origen": "CO",
+    "nivel": "intermedio",
+    "tiempo_minutos": 90,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "poroto",
+        "cantidad": 400,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "zanahoria",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "tomate",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "cebolla",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "ajo",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 30,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 5,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "agua",
+        "cantidad": 1500,
+        "unidad": "ml"
+      }
+    ],
+    "pasos": [
+      "Remoja los frijoles desde la noche anterior.",
+      "Cuécelos con la zanahoria hasta que ablanden.",
+      "Agrega un hogao de tomate, cebolla y ajo y cocina 15 minutos más."
+    ]
+  },
+  {
+    "id": "gallo_pinto",
+    "nombre": "Gallo pinto",
+    "nombres_alternativos": {},
+    "cocina_de_origen": "CR",
+    "nivel": "principiante",
+    "tiempo_minutos": 25,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "arroz",
+        "cantidad": 300,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "poroto",
+        "cantidad": 300,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "cebolla",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "pimenton",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "cilantro",
+        "cantidad": 10,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 30,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 4,
+        "unidad": "g"
+      }
+    ],
+    "pasos": [
+      "Sofríe la cebolla y el pimiento picados.",
+      "Agrega los frijoles cocidos con un poco de su caldo.",
+      "Suma el arroz cocido, mezcla bien y termina con cilantro."
+    ]
+  },
+  {
+    "id": "locro",
+    "nombre": "Locro",
+    "nombres_alternativos": {},
+    "cocina_de_origen": "AR",
+    "nivel": "avanzado",
+    "tiempo_minutos": 150,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "zapallo",
+        "cantidad": 500,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "choclo",
+        "cantidad": 300,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "poroto",
+        "cantidad": 200,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "carne_vacuno",
+        "cantidad": 500,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "cebolla",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "pimenton",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 30,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 6,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "agua",
+        "cantidad": 2000,
+        "unidad": "ml"
+      }
+    ],
+    "pasos": [
+      "Remoja los porotos la noche anterior.",
+      "Cocina la carne en trozos con los porotos en abundante agua.",
+      "Agrega el zapallo y el choclo; cocina a fuego bajo hasta espesar.",
+      "Sirve con un sofrito de cebolla y morrón."
+    ]
+  },
+  {
+    "id": "milanesa_de_pollo",
+    "nombre": "Milanesa de pollo",
+    "nombres_alternativos": {},
+    "cocina_de_origen": "AR",
+    "nivel": "intermedio",
+    "tiempo_minutos": 30,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "pollo",
+        "cantidad": 600,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "huevo",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "pan_rallado",
+        "cantidad": 150,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 150,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "limon",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 4,
+        "unidad": "g"
+      }
+    ],
+    "pasos": [
+      "Aplana las pechugas y sálalas.",
+      "Pásalas por huevo batido y pan rallado.",
+      "Fríe en aceite caliente 3 minutos por lado; sirve con limón."
+    ]
+  },
+  {
+    "id": "tarta_de_espinaca",
+    "nombre": "Tarta de espinaca",
+    "nombres_alternativos": {},
+    "cocina_de_origen": "AR",
+    "nivel": "avanzado",
+    "tiempo_minutos": 70,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "harina",
+        "cantidad": 250,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "mantequilla",
+        "cantidad": 120,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "espinaca",
+        "cantidad": 500,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "huevo",
+        "cantidad": 3,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "queso",
+        "cantidad": 150,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "leche",
+        "cantidad": 150,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "cebolla",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 5,
+        "unidad": "g"
+      }
+    ],
+    "pasos": [
+      "Prepara una masa con harina, mantequilla, sal y agua fría; refrigera 20 minutos.",
+      "Saltea la cebolla y la espinaca.",
+      "Mezcla con huevos, leche y queso; rellena la masa.",
+      "Hornea a 180 °C por 35 minutos."
+    ]
+  },
+  {
+    "id": "panqueques_de_avena_y_platano",
+    "nombre": "Panqueques de avena y plátano",
+    "nombres_alternativos": {
+      "AR": "Panqueques de avena y banana",
+      "ES": "Tortitas de avena y plátano",
+      "MX": "Hot cakes de avena y plátano"
+    },
+    "cocina_de_origen": "AR",
+    "nivel": "principiante",
+    "tiempo_minutos": 20,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "avena",
+        "cantidad": 150,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "platano",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "huevo",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "leche",
+        "cantidad": 200,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 10,
+        "unidad": "ml"
+      }
+    ],
+    "pasos": [
+      "Licúa la avena, el plátano, los huevos y la leche.",
+      "Cocina porciones en un sartén apenas aceitado, 2 minutos por lado."
+    ]
+  },
+  {
+    "id": "fideos_con_salsa_de_tomate",
+    "nombre": "Fideos con salsa de tomate",
+    "nombres_alternativos": {
+      "ES": "Pasta con salsa de tomate",
+      "MX": "Pasta con salsa de jitomate"
+    },
+    "cocina_de_origen": "varios",
+    "nivel": "principiante",
+    "tiempo_minutos": 25,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "fideos",
+        "cantidad": 400,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "tomate",
+        "cantidad": 5,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "cebolla",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "ajo",
+        "cantidad": 2,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 30,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 6,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "agua",
+        "cantidad": 3000,
+        "unidad": "ml"
+      }
+    ],
+    "pasos": [
+      "Cuece los fideos en agua con sal.",
+      "Sofríe cebolla y ajo; agrega el tomate picado y cocina 15 minutos.",
+      "Mezcla la salsa con los fideos escurridos."
+    ]
+  },
+  {
+    "id": "crema_de_zapallo",
+    "nombre": "Crema de zapallo",
+    "nombres_alternativos": {
+      "MX": "Crema de calabaza",
+      "ES": "Crema de calabaza",
+      "CO": "Crema de ahuyama"
+    },
+    "cocina_de_origen": "varios",
+    "nivel": "principiante",
+    "tiempo_minutos": 35,
+    "porciones_base": 4,
+    "ingredientes": [
+      {
+        "ingrediente_id": "zapallo",
+        "cantidad": 800,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "cebolla",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "zanahoria",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "papa",
+        "cantidad": 1,
+        "unidad": "un"
+      },
+      {
+        "ingrediente_id": "aceite",
+        "cantidad": 20,
+        "unidad": "ml"
+      },
+      {
+        "ingrediente_id": "sal",
+        "cantidad": 5,
+        "unidad": "g"
+      },
+      {
+        "ingrediente_id": "agua",
+        "cantidad": 1000,
+        "unidad": "ml"
+      }
+    ],
+    "pasos": [
+      "Sofríe la cebolla.",
+      "Agrega zapallo, zanahoria y papa en cubos y cubre con agua.",
+      "Cocina 25 minutos y licúa hasta que quede cremosa."
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: quecocino
+spec:
+  type: ClusterIP
+  selector: {app: quecocino}
+  ports:
+    - port: 80
+      targetPort: 8080

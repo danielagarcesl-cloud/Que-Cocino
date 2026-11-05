@@ -1,0 +1,74 @@
+# Países soportados en la versión 1.
+# Todo lo regional (moneda, formato y proveedores) sale de aquí: nada de esto está fijo en el código.
+CL:
+  nombre: Chile
+  moneda: CLP
+  decimales: 0
+  separador_miles: "."
+  separador_decimal: ","
+  simbolo: "$"
+  posicion_simbolo: antes
+  proveedores: [simulado, jumbo, rappi, pedidosya, ubereats]
+AR:
+  nombre: Argentina
+  moneda: ARS
+  decimales: 0
+  separador_miles: "."
+  separador_decimal: ","
+  simbolo: "$"
+  posicion_simbolo: antes
+  proveedores: [simulado, rappi, pedidosya]
+MX:
+  nombre: México
+  moneda: MXN
+  decimales: 2
+  separador_miles: ","
+  separador_decimal: "."
+  simbolo: "$"
+  posicion_simbolo: antes
+  proveedores: [simulado, rappi, ubereats]
+CO:
+  nombre: Colombia
+  moneda: COP
+  decimales: 0
+  separador_miles: "."
+  separador_decimal: ","
+  simbolo: "$"
+  posicion_simbolo: antes
+  proveedores: [simulado, rappi, ubereats]
+PE:
+  nombre: Perú
+  moneda: PEN
+  decimales: 2
+  separador_miles: ","
+  separador_decimal: "."
+  simbolo: "S/"
+  posicion_simbolo: antes
+  proveedores: [simulado, rappi, pedidosya]
+ES:
+  nombre: España
+  moneda: EUR
+  decimales: 2
+  separador_miles: "."
+  separador_decimal: ","
+  simbolo: "€"
+  posicion_simbolo: despues
+  proveedores: [simulado, ubereats]
+US:
+  nombre: Estados Unidos
+  moneda: USD
+  decimales: 2
+  separador_miles: ","
+  separador_decimal: "."
+  simbolo: "US$"
+  posicion_simbolo: antes
+  proveedores: [simulado, ubereats]
+OTRO:
+  nombre: Otro país
+  moneda: USD
+  decimales: 2
+  separador_miles: ","
+  separador_decimal: "."
+  simbolo: "US$"
+  posicion_simbolo: antes
+  proveedores: [simulado]

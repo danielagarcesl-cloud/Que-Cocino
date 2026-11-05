@@ -1,0 +1,736 @@
+[
+  {
+    "id": "sal",
+    "nombre": "sal",
+    "sinonimos": [],
+    "nombre_por_pais": {},
+    "categoria": "despensa",
+    "unidad_base": "g",
+    "etiquetas": [],
+    "es_basico": true
+  },
+  {
+    "id": "pimienta",
+    "nombre": "pimienta",
+    "sinonimos": [],
+    "nombre_por_pais": {},
+    "categoria": "despensa",
+    "unidad_base": "g",
+    "etiquetas": [],
+    "es_basico": true
+  },
+  {
+    "id": "agua",
+    "nombre": "agua",
+    "sinonimos": [],
+    "nombre_por_pais": {},
+    "categoria": "despensa",
+    "unidad_base": "ml",
+    "etiquetas": [],
+    "es_basico": true
+  },
+  {
+    "id": "papa",
+    "nombre": "papa",
+    "sinonimos": [
+      "patata"
+    ],
+    "nombre_por_pais": {
+      "ES": "patata"
+    },
+    "categoria": "verdura",
+    "unidad_base": "un",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "huevo",
+    "nombre": "huevo",
+    "sinonimos": [],
+    "nombre_por_pais": {},
+    "categoria": "proteina",
+    "unidad_base": "un",
+    "etiquetas": [
+      "huevo"
+    ],
+    "es_basico": false
+  },
+  {
+    "id": "cebolla",
+    "nombre": "cebolla",
+    "sinonimos": [],
+    "nombre_por_pais": {},
+    "categoria": "verdura",
+    "unidad_base": "un",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "aceite",
+    "nombre": "aceite",
+    "sinonimos": [
+      "aceite vegetal",
+      "aceite de oliva",
+      "aceite de maravilla",
+      "aceite de girasol"
+    ],
+    "nombre_por_pais": {},
+    "categoria": "despensa",
+    "unidad_base": "ml",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "zapallo_italiano",
+    "nombre": "zapallo italiano",
+    "sinonimos": [
+      "zucchini",
+      "calabacin",
+      "calabacita",
+      "zapallito",
+      "zuchini"
+    ],
+    "nombre_por_pais": {
+      "ES": "calabacín",
+      "MX": "calabacita",
+      "AR": "zapallito",
+      "CO": "calabacín",
+      "US": "calabacín",
+      "PE": "zucchini"
+    },
+    "categoria": "verdura",
+    "unidad_base": "g",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "queso",
+    "nombre": "queso",
+    "sinonimos": [
+      "queso rallado",
+      "queso fresco",
+      "queso mantecoso",
+      "quesillo"
+    ],
+    "nombre_por_pais": {},
+    "categoria": "lacteo",
+    "unidad_base": "g",
+    "etiquetas": [
+      "lacteo"
+    ],
+    "es_basico": false
+  },
+  {
+    "id": "leche",
+    "nombre": "leche",
+    "sinonimos": [],
+    "nombre_por_pais": {},
+    "categoria": "lacteo",
+    "unidad_base": "ml",
+    "etiquetas": [
+      "lacteo"
+    ],
+    "es_basico": false
+  },
+  {
+    "id": "pollo",
+    "nombre": "pollo",
+    "sinonimos": [
+      "pechuga de pollo",
+      "trutro de pollo",
+      "muslo de pollo"
+    ],
+    "nombre_por_pais": {},
+    "categoria": "proteina",
+    "unidad_base": "g",
+    "etiquetas": [
+      "ave"
+    ],
+    "es_basico": false
+  },
+  {
+    "id": "limon",
+    "nombre": "limón",
+    "sinonimos": [
+      "lima"
+    ],
+    "nombre_por_pais": {},
+    "categoria": "fruta",
+    "unidad_base": "un",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "ajo",
+    "nombre": "ajo",
+    "sinonimos": [
+      "diente de ajo"
+    ],
+    "nombre_por_pais": {},
+    "categoria": "verdura",
+    "unidad_base": "un",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "harina",
+    "nombre": "harina",
+    "sinonimos": [
+      "harina de trigo"
+    ],
+    "nombre_por_pais": {},
+    "categoria": "despensa",
+    "unidad_base": "g",
+    "etiquetas": [
+      "gluten"
+    ],
+    "es_basico": false
+  },
+  {
+    "id": "palta",
+    "nombre": "palta",
+    "sinonimos": [
+      "aguacate"
+    ],
+    "nombre_por_pais": {
+      "CL": "palta",
+      "AR": "palta",
+      "PE": "palta",
+      "MX": "aguacate",
+      "ES": "aguacate",
+      "CO": "aguacate",
+      "US": "aguacate",
+      "OTRO": "aguacate"
+    },
+    "categoria": "fruta",
+    "unidad_base": "un",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "poroto",
+    "nombre": "poroto",
+    "sinonimos": [
+      "frijol",
+      "frejol",
+      "judia",
+      "alubia",
+      "caraota",
+      "habichuela",
+      "poroto negro",
+      "frijol negro"
+    ],
+    "nombre_por_pais": {
+      "MX": "frijol",
+      "CO": "frijol",
+      "US": "frijol",
+      "PE": "frejol",
+      "ES": "alubia",
+      "OTRO": "frijol"
+    },
+    "categoria": "legumbre",
+    "unidad_base": "g",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "tortilla_maiz",
+    "nombre": "tortilla de maíz",
+    "sinonimos": [
+      "tortilla de maiz"
+    ],
+    "nombre_por_pais": {},
+    "categoria": "despensa",
+    "unidad_base": "un",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "arroz",
+    "nombre": "arroz",
+    "sinonimos": [],
+    "nombre_por_pais": {},
+    "categoria": "despensa",
+    "unidad_base": "g",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "lenteja",
+    "nombre": "lenteja",
+    "sinonimos": [],
+    "nombre_por_pais": {},
+    "categoria": "legumbre",
+    "unidad_base": "g",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "tomate",
+    "nombre": "tomate",
+    "sinonimos": [
+      "jitomate"
+    ],
+    "nombre_por_pais": {
+      "MX": "jitomate"
+    },
+    "categoria": "verdura",
+    "unidad_base": "un",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "pimenton",
+    "nombre": "pimentón",
+    "sinonimos": [
+      "pimiento",
+      "morron",
+      "aji morron",
+      "pimiento rojo",
+      "chile morron"
+    ],
+    "nombre_por_pais": {
+      "CL": "pimentón",
+      "CO": "pimentón",
+      "AR": "morrón",
+      "MX": "pimiento morrón",
+      "ES": "pimiento",
+      "PE": "pimiento",
+      "US": "pimiento"
+    },
+    "categoria": "verdura",
+    "unidad_base": "un",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "zanahoria",
+    "nombre": "zanahoria",
+    "sinonimos": [],
+    "nombre_por_pais": {},
+    "categoria": "verdura",
+    "unidad_base": "un",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "choclo",
+    "nombre": "choclo",
+    "sinonimos": [
+      "elote",
+      "maiz",
+      "mazorca",
+      "granos de maiz",
+      "maiz dulce"
+    ],
+    "nombre_por_pais": {
+      "MX": "elote",
+      "ES": "maíz dulce",
+      "CO": "mazorca",
+      "US": "elote",
+      "OTRO": "maíz"
+    },
+    "categoria": "verdura",
+    "unidad_base": "g",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "zapallo",
+    "nombre": "zapallo",
+    "sinonimos": [
+      "calabaza",
+      "auyama",
+      "ahuyama"
+    ],
+    "nombre_por_pais": {
+      "MX": "calabaza",
+      "ES": "calabaza",
+      "CO": "ahuyama",
+      "US": "calabaza",
+      "OTRO": "calabaza"
+    },
+    "categoria": "verdura",
+    "unidad_base": "g",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "arveja",
+    "nombre": "arveja",
+    "sinonimos": [
+      "guisante",
+      "chicharo",
+      "alverja",
+      "petit pois"
+    ],
+    "nombre_por_pais": {
+      "ES": "guisante",
+      "MX": "chícharo",
+      "OTRO": "guisante"
+    },
+    "categoria": "legumbre",
+    "unidad_base": "g",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "carne_molida",
+    "nombre": "carne molida",
+    "sinonimos": [
+      "carne picada",
+      "molida",
+      "carne de res molida"
+    ],
+    "nombre_por_pais": {
+      "ES": "carne picada",
+      "AR": "carne picada"
+    },
+    "categoria": "proteina",
+    "unidad_base": "g",
+    "etiquetas": [
+      "carne"
+    ],
+    "es_basico": false
+  },
+  {
+    "id": "carne_vacuno",
+    "nombre": "carne de vacuno",
+    "sinonimos": [
+      "carne de res",
+      "res",
+      "lomo",
+      "carne"
+    ],
+    "nombre_por_pais": {
+      "MX": "carne de res",
+      "CO": "carne de res",
+      "PE": "carne de res",
+      "US": "carne de res",
+      "ES": "ternera",
+      "AR": "carne vacuna"
+    },
+    "categoria": "proteina",
+    "unidad_base": "g",
+    "etiquetas": [
+      "carne"
+    ],
+    "es_basico": false
+  },
+  {
+    "id": "platano",
+    "nombre": "plátano",
+    "sinonimos": [
+      "banana",
+      "banano",
+      "cambur",
+      "guineo"
+    ],
+    "nombre_por_pais": {
+      "AR": "banana",
+      "CO": "banano"
+    },
+    "categoria": "fruta",
+    "unidad_base": "un",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "avena",
+    "nombre": "avena",
+    "sinonimos": [
+      "avena en hojuelas",
+      "copos de avena"
+    ],
+    "nombre_por_pais": {},
+    "categoria": "despensa",
+    "unidad_base": "g",
+    "etiquetas": [
+      "gluten"
+    ],
+    "es_basico": false
+  },
+  {
+    "id": "pan",
+    "nombre": "pan",
+    "sinonimos": [
+      "marraqueta",
+      "pan batido",
+      "baguette",
+      "pan de molde"
+    ],
+    "nombre_por_pais": {},
+    "categoria": "despensa",
+    "unidad_base": "g",
+    "etiquetas": [
+      "gluten"
+    ],
+    "es_basico": false
+  },
+  {
+    "id": "fideos",
+    "nombre": "fideos",
+    "sinonimos": [
+      "pasta",
+      "tallarines",
+      "espagueti",
+      "spaghetti",
+      "macarrones"
+    ],
+    "nombre_por_pais": {
+      "ES": "pasta",
+      "MX": "pasta",
+      "OTRO": "pasta"
+    },
+    "categoria": "despensa",
+    "unidad_base": "g",
+    "etiquetas": [
+      "gluten"
+    ],
+    "es_basico": false
+  },
+  {
+    "id": "salsa_soya",
+    "nombre": "salsa de soya",
+    "sinonimos": [
+      "sillao",
+      "salsa de soja",
+      "soya"
+    ],
+    "nombre_por_pais": {
+      "ES": "salsa de soja",
+      "PE": "sillao"
+    },
+    "categoria": "despensa",
+    "unidad_base": "ml",
+    "etiquetas": [
+      "gluten"
+    ],
+    "es_basico": false
+  },
+  {
+    "id": "cilantro",
+    "nombre": "cilantro",
+    "sinonimos": [
+      "culantro"
+    ],
+    "nombre_por_pais": {
+      "CL": "cilantro"
+    },
+    "categoria": "verdura",
+    "unidad_base": "g",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "aji",
+    "nombre": "ají",
+    "sinonimos": [
+      "chile",
+      "guindilla",
+      "aji verde",
+      "chile serrano",
+      "jalapeno",
+      "aji amarillo"
+    ],
+    "nombre_por_pais": {
+      "MX": "chile",
+      "ES": "guindilla",
+      "US": "chile"
+    },
+    "categoria": "verdura",
+    "unidad_base": "un",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "atun",
+    "nombre": "atún",
+    "sinonimos": [
+      "atun en lata",
+      "lata de atun"
+    ],
+    "nombre_por_pais": {},
+    "categoria": "proteina",
+    "unidad_base": "g",
+    "etiquetas": [
+      "pescado"
+    ],
+    "es_basico": false
+  },
+  {
+    "id": "camaron",
+    "nombre": "camarón",
+    "sinonimos": [
+      "gamba",
+      "langostino",
+      "camarones"
+    ],
+    "nombre_por_pais": {
+      "ES": "gamba"
+    },
+    "categoria": "proteina",
+    "unidad_base": "g",
+    "etiquetas": [
+      "marisco"
+    ],
+    "es_basico": false
+  },
+  {
+    "id": "crema",
+    "nombre": "crema",
+    "sinonimos": [
+      "nata",
+      "crema de leche"
+    ],
+    "nombre_por_pais": {
+      "ES": "nata"
+    },
+    "categoria": "lacteo",
+    "unidad_base": "ml",
+    "etiquetas": [
+      "lacteo"
+    ],
+    "es_basico": false
+  },
+  {
+    "id": "mantequilla",
+    "nombre": "mantequilla",
+    "sinonimos": [
+      "manteca"
+    ],
+    "nombre_por_pais": {
+      "AR": "manteca"
+    },
+    "categoria": "lacteo",
+    "unidad_base": "g",
+    "etiquetas": [
+      "lacteo"
+    ],
+    "es_basico": false
+  },
+  {
+    "id": "harina_maiz",
+    "nombre": "harina de maíz precocida",
+    "sinonimos": [
+      "harina pan",
+      "harina de maiz",
+      "masarepa"
+    ],
+    "nombre_por_pais": {},
+    "categoria": "despensa",
+    "unidad_base": "g",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "quinoa",
+    "nombre": "quinoa",
+    "sinonimos": [
+      "quinua"
+    ],
+    "nombre_por_pais": {
+      "PE": "quinua"
+    },
+    "categoria": "despensa",
+    "unidad_base": "g",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "garbanzo",
+    "nombre": "garbanzo",
+    "sinonimos": [],
+    "nombre_por_pais": {},
+    "categoria": "legumbre",
+    "unidad_base": "g",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "espinaca",
+    "nombre": "espinaca",
+    "sinonimos": [],
+    "nombre_por_pais": {},
+    "categoria": "verdura",
+    "unidad_base": "g",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "pepino",
+    "nombre": "pepino",
+    "sinonimos": [],
+    "nombre_por_pais": {},
+    "categoria": "verdura",
+    "unidad_base": "un",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "vinagre",
+    "nombre": "vinagre",
+    "sinonimos": [],
+    "nombre_por_pais": {},
+    "categoria": "despensa",
+    "unidad_base": "ml",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "champinon",
+    "nombre": "champiñón",
+    "sinonimos": [
+      "champinon",
+      "hongo",
+      "seta",
+      "callampa"
+    ],
+    "nombre_por_pais": {
+      "AR": "champiñón",
+      "MX": "champiñón"
+    },
+    "categoria": "verdura",
+    "unidad_base": "g",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "pan_rallado",
+    "nombre": "pan rallado",
+    "sinonimos": [
+      "pan molido"
+    ],
+    "nombre_por_pais": {
+      "MX": "pan molido"
+    },
+    "categoria": "despensa",
+    "unidad_base": "g",
+    "etiquetas": [
+      "gluten"
+    ],
+    "es_basico": false
+  },
+  {
+    "id": "tofu",
+    "nombre": "tofu",
+    "sinonimos": [],
+    "nombre_por_pais": {},
+    "categoria": "proteina",
+    "unidad_base": "g",
+    "etiquetas": [],
+    "es_basico": false
+  },
+  {
+    "id": "miel",
+    "nombre": "miel",
+    "sinonimos": [],
+    "nombre_por_pais": {},
+    "categoria": "despensa",
+    "unidad_base": "ml",
+    "etiquetas": [
+      "miel"
+    ],
+    "es_basico": false
+  }
+]
