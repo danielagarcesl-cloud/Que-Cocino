@@ -44,7 +44,7 @@ PE:
   separador_decimal: "."
   simbolo: "S/"
   posicion_simbolo: antes
-  proveedores: [simulado, rappi, pedidosya]
+  proveedores: [simulado, rappi]
 ES:
   nombre: España
   moneda: EUR

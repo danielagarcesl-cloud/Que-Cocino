@@ -99,7 +99,7 @@ docker run -p 8080:8080 -e OPENAI_API_KEY quecocino:1.0
 | 0 · Plan | ✅ aprobado | El equipo pidió construir la app (4 nov) |
 | 1 · Datos, países y normalización | ✅ | 48 ingredientes, 32 recetas de 7 cocinas, precios CL/MX/ES, 8 países |
 | 2 · Núcleo y favoritas | ✅ | Todos los valores de control en verde. Ajuste: en el pollo de control, papa 6 un en vez de 1 kg (kg → un no se puede convertir) |
-| 3 · Proveedores | ⚠️ código listo | Falta verificar a mano las plantillas de URL (`verificado: false`) |
+| 3 · Proveedores | ✅ | Verificados en navegador (5 nov): Jumbo CL, Rappi CL/AR/MX/CO/PE y PedidosYa CL/AR y Uber Eats CL/MX/CO/ES/US (a mano por el equipo; Uber Eats pide iniciar sesión). Se quitó PedidosYa PE (no abría) |
 | 4 · Percepción | ✅ | Probado con ClienteFalso; falta foto real (fase 8) |
 | 5 · Orquestador | ✅ | 10 herramientas, tope de 8 pasos, traza con costo |
 | 6 · Guardián y límites | ✅ | 1 reintento y luego plantilla segura; límites diarios por IP |

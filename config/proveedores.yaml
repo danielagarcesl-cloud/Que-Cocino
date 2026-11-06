@@ -14,16 +14,16 @@ simulado:
 jumbo:
   nombre: Jumbo
   tipo_integracion: enlace_busqueda
-  verificado: false
-  verificado_en: null
+  verificado: true
+  verificado_en: "2026-11-05"
   plantillas:
     CL: "https://www.jumbo.cl/busqueda?ft={consulta}"
 
 rappi:
   nombre: Rappi
   tipo_integracion: enlace_busqueda
-  verificado: false
-  verificado_en: null
+  verificado: true
+  verificado_en: "2026-11-05"
   plantillas:
     CL: "https://www.rappi.cl/search?query={consulta}"
     AR: "https://www.rappi.com.ar/search?query={consulta}"
@@ -34,18 +34,19 @@ rappi:
 pedidosya:
   nombre: PedidosYa
   tipo_integracion: enlace_busqueda
-  verificado: false
-  verificado_en: null
+  verificado: true
+  verificado_en: "2026-11-05"
   plantillas:
     CL: "https://www.pedidosya.cl/search?query={consulta}"
     AR: "https://www.pedidosya.com.ar/search?query={consulta}"
-    PE: "https://www.pedidosya.com.pe/search?query={consulta}"
 
+# Uber Eats pide iniciar sesión antes de mostrar los resultados; quien ya usa la app
+# normalmente tiene la sesión abierta. No pide verificación de "humano".
 ubereats:
   nombre: Uber Eats
   tipo_integracion: enlace_busqueda
-  verificado: false
-  verificado_en: null
+  verificado: true
+  verificado_en: "2026-11-05"
   plantillas:
     CL: "https://www.ubereats.com/cl/search?q={consulta}"
     MX: "https://www.ubereats.com/mx/search?q={consulta}"

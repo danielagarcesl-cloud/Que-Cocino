@@ -71,12 +71,13 @@ Supermercados y apps de delivery no ofrecen una API pública para armar carritos
 | País | Proveedores configurados |
 |---|---|
 | Chile | Jumbo, Rappi, PedidosYa, Uber Eats |
-| Argentina · Perú | Rappi, PedidosYa |
+| Argentina | Rappi, PedidosYa |
 | México · Colombia | Rappi, Uber Eats |
+| Perú | Rappi |
 | España · Estados Unidos | Uber Eats |
 | Otro | solo precios referenciales |
 
-> ⚠️ Las plantillas de URL están marcadas `verificado: false`. Antes de publicar, ábrelas a mano en un navegador, corrige o borra las que no funcionen y anota la fecha en `verificado_en`.
+> ✅ Todas las plantillas se verificaron a mano en un navegador el 2026-11-05. Uber Eats pide iniciar sesión antes de mostrar resultados. PedidosYa Perú se quitó porque el enlace no abría.
 
 Punto de extensión: una integración real (carrito precargado, stock y precio en vivo, comisión por afiliación) requiere convenio con cada partner; se implementa como un nuevo `ProveedorCompra` en `app/proveedores/`.
 
