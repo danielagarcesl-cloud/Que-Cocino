@@ -98,6 +98,7 @@
   <nav class="pestanas" role="tablist">
     <button class="pestana" role="tab" aria-selected="true" data-tab="cocinar">Cocinar</button>
     <button class="pestana" role="tab" aria-selected="false" data-tab="favoritas">Mis recetas <span class="contador" id="cuenta-fav">0</span></button>
+    <button class="pestana" role="tab" aria-selected="false" data-tab="carrito">Carrito <span class="contador" id="cuenta-carrito">0</span></button>
     <button class="pestana" role="tab" aria-selected="false" data-tab="chat">Chat</button>
   </nav>
 </header>
@@ -161,6 +162,21 @@
     <div id="lista-fav"></div>
   </section>
 
+  <!-- ================= MI CARRITO ================= -->
+  <section id="tab-carrito" hidden>
+    <div class="tarjeta">
+      <h2>Mi carrito</h2>
+      <p class="nota" id="carrito-tienda" style="margin-top:0"></p>
+      <p class="aviso">Los productos que faltan para tus recetas se agregan aquí solos. Puedes cambiar el producto
+        (por ejemplo “leche semidescremada”), las unidades o quitarlo. Cada producto tiene su enlace para
+        agregarlo al carro de la tienda.</p>
+      <div id="lista-carrito" aria-live="polite"></div>
+      <div class="fila" style="margin-top:12px">
+        <button class="boton chica" id="btn-vaciar-carrito">Vaciar carrito</button>
+      </div>
+    </div>
+  </section>
+
   <!-- ================= CHAT ================= -->
   <section id="tab-chat" hidden>
     <div class="tarjeta">
@@ -185,7 +201,7 @@
 "use strict";
 // ---------------------------------------------------------------- utilidades
 const $ = (s) => document.querySelector(s);
-const CLAVES = {fav: "quecocino.favoritos.v1", det: "quecocino.detalles.v1", perfil: "quecocino.perfil.v1"};
+const CLAVES = {fav: "quecocino.favoritos.v1", det: "quecocino.detalles.v1", perfil: "quecocino.perfil.v1", carrito: "quecocino.carrito.v1"};
 function leer(clave, defecto){ try { const v = localStorage.getItem(clave); return v ? JSON.parse(v) : defecto; } catch { return defecto; } }
 function escribir(clave, valor){ try { localStorage.setItem(clave, JSON.stringify(valor)); } catch {} }
 function el(tag, attrs = {}, ...hijos){
@@ -211,6 +227,7 @@ async function conCarga(boton, fn){ boton.classList.add("cargando"); try { retur
 const estado = {
   inventario: [], nombres: {}, dudosos: [], modo: "completar_comprando",
   favoritos: leer(CLAVES.fav, []), detalles: leer(CLAVES.det, {}), opciones: null, carpeta: null,
+  carrito: leer(CLAVES.carrito, []), ultimoCarrito: null,
 };
 function guardarFavoritos(lista){ estado.favoritos = lista; escribir(CLAVES.fav, lista); $("#cuenta-fav").textContent = lista.length; }
 function perfil(){
@@ -222,8 +239,9 @@ function recordarPerfil(){ const p = perfil(); escribir(CLAVES.perfil, {...p, in
 // ---------------------------------------------------------------- pestañas
 document.querySelectorAll(".pestana").forEach(b => b.addEventListener("click", () => {
   document.querySelectorAll(".pestana").forEach(x => x.setAttribute("aria-selected", x === b));
-  for (const t of ["cocinar", "favoritas", "chat"]) $("#tab-" + t).hidden = t !== b.dataset.tab;
+  for (const t of ["cocinar", "favoritas", "carrito", "chat"]) $("#tab-" + t).hidden = t !== b.dataset.tab;
   if (b.dataset.tab === "favoritas") pintarFavoritas();
+  if (b.dataset.tab === "carrito") abrirCarrito();
 }));
 
 // ---------------------------------------------------------------- opciones y país
@@ -246,7 +264,7 @@ async function iniciar(){
   sel.value = guardado?.pais || paisDelNavegador();
   if (guardado) { $("#nivel").value = guardado.nivel; $("#restriccion").value = guardado.restriccion; $("#porciones").value = guardado.porciones;
     estado.modo = guardado.modo || estado.modo; document.querySelectorAll("#modo button").forEach(b => b.setAttribute("aria-pressed", b.dataset.modo === estado.modo)); }
-  pintarProveedores(); guardarFavoritos(estado.favoritos); pintarChips();
+  pintarProveedores(); guardarFavoritos(estado.favoritos); guardarCarrito(estado.carrito); pintarChips();
   if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js").catch(() => {});
 }
 $("#pais").addEventListener("change", async () => { pintarProveedores(); recordarPerfil(); await renombrarChips(); });
@@ -321,10 +339,19 @@ $("#btn-buscar").addEventListener("click", () => conCarga($("#btn-buscar"), asyn
   const p = perfil();
   const r = await api("/menu/sugerir", {...p, max_resultados: 6});
   const cont = $("#resultados"); cont.replaceChildren();
+  if (!r.recetas.length && estado.modo === "solo_lo_que_tengo") {
+    // No alcanza para una receta completa: mostramos las más cercanas y lo poco que les falta.
+    const cerca = await api("/menu/sugerir", {...p, modo: "completar_comprando", max_resultados: 3});
+    const primera = cerca.recetas[0];
+    cont.append(el("div", {class: "tarjeta vacio"}, primera
+      ? `Con lo que tienes no alcanza para una receta completa, pero ${primera.nombre.toLowerCase()} solo necesita ${primera.faltantes.map(f => f.nombre).join(", ")}. Estas son las más cercanas:`
+      : "Con lo que tienes no alcanza para ninguna receta del catálogo. Prueba con otro nivel o restricción."));
+    for (const rec of cerca.recetas) cont.append(tarjetaReceta(rec, p));
+    cont.firstChild.scrollIntoView({behavior: "smooth", block: "start"});
+    return;
+  }
   if (!r.recetas.length) {
-    cont.append(el("div", {class: "tarjeta vacio"}, estado.modo === "solo_lo_que_tengo"
-      ? "Con solo lo que tienes no alcanza para ninguna receta del catálogo. Prueba con “Completar comprando”."
-      : "No encontré recetas para esa combinación. Prueba con otro nivel o restricción."));
+    cont.append(el("div", {class: "tarjeta vacio"}, "No encontré recetas para esa combinación. Prueba con otro nivel o restricción."));
     return;
   }
   for (const rec of r.recetas) cont.append(tarjetaReceta(rec, p));
@@ -348,7 +375,8 @@ function tarjetaReceta(rec, p){
       el("button", {class: "boton chica", onclick: (e) => conCarga(e.currentTarget, async () => abrir(vistaDetalle(await obtenerDetalle(rec.receta_id, p.porciones, p.pais))))}, "Ver receta"),
       rec.faltantes.length ? el("button", {class: "boton chica primario", onclick: (e) => conCarga(e.currentTarget, async () => {
         const c = await api("/carrito", {receta_id: rec.receta_id, inventario: p.inventario, porciones: p.porciones, pais: p.pais, proveedor: $("#proveedor").value});
-        abrir(vistaCarrito(c)); })}, "Comprar lo que falta") : null,
+        abrir(vistaCarrito(c));
+        await agregarAlCarrito(c.faltantes, rec.nombre); })}, "Comprar lo que falta") : null,
       el("button", {class: "boton chica", onclick: () => abrir(formGuardar(rec, p))}, "♥ Guardar")),
     panel);
 }
@@ -368,17 +396,93 @@ function fmtCant(c, u){
   if (u === "ml" && c >= 1000) return `${+(c / 1000).toFixed(2)} l`;
   return u === "un" ? `${c}` : `${c} ${u}`;
 }
+// El carrito lista TODO lo que falta para la receta. Cada producto trae cuánto se necesita,
+// su precio referencial (si lo hay) y su enlace de búsqueda en la tienda elegida.
 function vistaCarrito(c){
-  const filas = c.items.map(i => el("tr", {}, el("td", {}, `${i.nombre}`, el("div", {class: "nota"}, `${i.unidades} × ${i.envase}`)), el("td", {class: "num"}, i.subtotal_formateado)));
+  const conPrecio = c.items.filter(i => i.con_precio).length;
+  const faltanPrecios = conPrecio < c.items.length;
+  const filas = c.items.map(i => el("tr", {},
+    el("td", {}, i.nombre,
+      el("div", {class: "nota"}, i.con_precio ? `${i.unidades} × ${i.envase}` : `Necesitas ${fmtCant(i.necesario, i.unidad)}`),
+      i.url ? el("div", {class: "enlaces"}, el("a", {href: i.url, target: "_blank", rel: "noopener noreferrer"}, `Buscar en ${c.proveedor_nombre} ↗`)) : null),
+    el("td", {class: "num"}, i.con_precio ? i.subtotal_formateado : el("span", {class: "nota"}, "sin precio"))));
   return el("div", {},
+    el("b", {}, `Tu carrito: ${c.items.length} ${c.items.length === 1 ? "producto" : "productos"}` + (c.tipo_integracion === "enlace_busqueda" ? ` · ${c.proveedor_nombre}` : "")),
     el("table", {}, el("thead", {}, el("tr", {}, el("th", {}, "Producto"), el("th", {class: "num"}, "Subtotal"))),
-      el("tbody", {}, filas, el("tr", {class: "total"}, el("td", {}, "Total"), el("td", {class: "num"}, c.total_formateado)))),
-    c.sin_precio.length ? el("p", {class: "nota"}, "Sin precio de referencia en tu país: " + c.sin_precio.map(x => x.replaceAll("_", " ")).join(", ")) : null,
-    c.enlaces.length ? el("div", {class: "enlaces"}, el("p", {class: "nota", style: "margin:8px 0 0"}, `Buscar en ${c.proveedor_nombre}:`),
-      c.enlaces.map(e => el("a", {href: e.url, target: "_blank", rel: "noopener noreferrer"}, e.nombre + " ↗"))) : null,
-    el("p", {class: "aviso", style: "margin-top:10px"}, c.aviso + (c.aviso_enlaces ? ". " + c.aviso_enlaces : ". Elige un proveedor arriba para ver enlaces de compra.")),
-    c.enlaces.length && c.enlaces_verificados === false ? el("p", {class: "nota"}, "Enlaces de búsqueda en verificación.") : null);
+      el("tbody", {}, filas, conPrecio ? el("tr", {class: "total"}, el("td", {}, faltanPrecios ? "Total referencial*" : "Total"), el("td", {class: "num"}, c.total_formateado)) : null)),
+    faltanPrecios ? el("p", {class: "nota"}, conPrecio
+      ? "* El total solo suma los productos con precio de referencia en tu país."
+      : "Aún no tenemos precios de referencia para tu país; usa los enlaces para ver los precios en la tienda.") : null,
+    el("p", {class: "aviso", style: "margin-top:10px"}, c.aviso + (c.aviso_enlaces ? ". " + c.aviso_enlaces : ". Elige una tienda en “Dónde comprar lo que falta” para ver enlaces de compra.")),
+    c.enlaces.length && c.enlaces_verificados === false ? el("p", {class: "nota"}, "Enlaces de búsqueda en verificación.") : null,
+    c.items.length ? el("button", {class: "boton chica primario", style: "margin-top:8px", onclick: () => document.querySelector('[data-tab="carrito"]').click()}, "Ver Mi carrito") : null);
 }
+
+// ---------------------------------------------------------------- mi carrito
+// En el navegador solo se guarda lo que el usuario eligió (producto, cantidad, receta).
+// Los precios, totales y enlaces los calcula siempre el servidor (/carrito/recalcular).
+function guardarCarrito(entradas){ estado.carrito = entradas; escribir(CLAVES.carrito, entradas); $("#cuenta-carrito").textContent = entradas.length; }
+function aEntrada(i){
+  return {ingrediente_id: i.ingrediente_id, necesario: i.necesario, unidad: i.unidad, recetas: i.recetas,
+          nombre: i.personalizado ? i.nombre : null, unidades: i.unidades_manual ? i.unidades : null};
+}
+async function recalcularCarrito(){
+  const r = await api("/carrito/recalcular", {items: estado.carrito, pais: $("#pais").value, proveedor: $("#proveedor").value});
+  estado.ultimoCarrito = r; guardarCarrito(r.items.map(aEntrada));
+  return r;
+}
+async function agregarAlCarrito(faltantes, receta){
+  if (!faltantes.length) return;
+  if (estado.carrito.some(e => (e.recetas || []).includes(receta))) { aviso(`Lo de ${receta} ya estaba en tu carrito.`); return; }
+  const antes = estado.carrito;
+  guardarCarrito([...antes, ...faltantes.map(f => ({ingrediente_id: f.ingrediente_id, necesario: f.cantidad, unidad: f.unidad, recetas: [receta], nombre: null, unidades: null}))]);
+  try { await recalcularCarrito(); aviso(`Agregué ${faltantes.length} ${faltantes.length === 1 ? "producto" : "productos"} a Mi carrito.`); }
+  catch (e) { guardarCarrito(antes); throw e; }
+}
+async function editarCarrito(cambio){
+  const antes = estado.carrito;
+  try { cambio(); await recalcularCarrito(); } catch (e) { guardarCarrito(antes); aviso(e.message); }
+  pintarCarrito();
+}
+async function abrirCarrito(){
+  const tienda = $("#proveedor").selectedOptions[0];
+  $("#carrito-tienda").textContent = tienda && tienda.value !== "simulado"
+    ? `Tienda: ${tienda.textContent}. Puedes cambiarla en “Dónde comprar lo que falta”, en la pestaña Cocinar.`
+    : "Aún no eliges tienda: solo verás precios referenciales. Elígela en “Dónde comprar lo que falta”, en la pestaña Cocinar.";
+  if (estado.carrito.length) { try { await recalcularCarrito(); } catch (e) { aviso(e.message); } }
+  pintarCarrito();
+}
+function pintarCarrito(){
+  const cont = $("#lista-carrito"); cont.replaceChildren();
+  const c = estado.ultimoCarrito;
+  if (!estado.carrito.length || !c) { cont.append(el("p", {class: "nota"}, "Tu carrito está vacío. Toca “Comprar lo que falta” en una receta y los productos aparecerán aquí.")); return; }
+  const filas = c.items.map((i, n) => {
+    const nombre = el("input", {type: "text", value: i.nombre, maxlength: 60, "aria-label": "Producto", style: "min-height:38px;padding:6px 10px"});
+    nombre.addEventListener("change", () => editarCarrito(() => {
+      const v = nombre.value.trim(); estado.carrito[n].nombre = v && v.toLowerCase() !== i.nombre_original.toLowerCase() ? v : null; }));
+    const cambiarUnidades = (d) => editarCarrito(() => { estado.carrito[n].unidades = Math.max(1, Math.min(99, (i.unidades || 1) + d)); });
+    return el("div", {class: "tarjeta", style: "padding:12px;margin:10px 0"},
+      nombre,
+      i.personalizado ? el("div", {class: "nota"}, `Cambiado desde: ${i.nombre_original}`) : null,
+      el("div", {class: "fila", style: "justify-content:space-between;margin-top:6px"},
+        el("div", {class: "fila"},
+          el("button", {class: "boton chica", "aria-label": "Una unidad menos", disabled: (i.unidades || 1) <= 1 ? "" : null, onclick: () => cambiarUnidades(-1)}, "−"),
+          el("span", {}, i.con_precio ? `${i.unidades} × ${i.envase}` : (i.unidades ? `${i.unidades} unidad(es)` : `Necesitas ${fmtCant(i.necesario, i.unidad)}`)),
+          el("button", {class: "boton chica", "aria-label": "Una unidad más", onclick: () => cambiarUnidades(+1)}, "+")),
+        el("b", {}, i.con_precio ? i.subtotal_formateado : el("span", {class: "nota"}, "sin precio"))),
+      el("div", {class: "nota"}, `Para: ${i.recetas.join(", ")}`),
+      el("div", {class: "fila", style: "margin-top:6px"},
+        i.url ? el("a", {class: "boton chica primario", href: i.url, target: "_blank", rel: "noopener noreferrer"}, `Agregar en ${c.proveedor_nombre} ↗`) : null,
+        el("button", {class: "boton chica", onclick: () => editarCarrito(() => { estado.carrito.splice(n, 1); })}, "Quitar")));
+  });
+  const conPrecio = c.items.filter(i => i.con_precio).length;
+  cont.append(...[...filas,
+    conPrecio ? el("p", {style: "text-align:right;font-size:18px;margin:8px 0"}, el("b", {}, (conPrecio < c.items.length ? "Total referencial*: " : "Total referencial: ") + c.total_formateado)) : null,
+    conPrecio && conPrecio < c.items.length ? el("p", {class: "nota"}, "* Solo suma los productos con precio de referencia en tu país.") : null,
+    c.aviso_variantes ? el("p", {class: "nota"}, c.aviso_variantes) : null,
+    el("p", {class: "aviso"}, c.aviso + ". " + (c.aviso_enlaces || "Elige una tienda para ver los enlaces de compra."))].filter(Boolean));
+}
+$("#btn-vaciar-carrito").addEventListener("click", () => { if (estado.carrito.length && confirm("¿Vaciar Mi carrito?")) { guardarCarrito([]); estado.ultimoCarrito = null; pintarCarrito(); } });
 function formGuardar(rec, p){
   const carpetas = [...new Set(estado.favoritos.map(f => f.carpeta))];
   const lista = el("datalist", {id: "dl-" + rec.receta_id}, carpetas.map(c => el("option", {value: c})));

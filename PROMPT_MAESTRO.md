@@ -636,7 +636,7 @@ Reglas:
 ## 12 · Criterios de aceptación
 - [ ] `pytest -q`: todos los tests pasan sin llamar a OpenAI ni a proveedores externos.
 - [ ] `/menu/sugerir` con el inventario de control, `vegetariano`, `avanzado` y `completar_comprando` devuelve tortilla (0,75) y budín (0,50), en ese orden.
-- [ ] `/carrito` para la tortilla devuelve `$3.490` en `CL` y `3,49 €` en `ES`, con el aviso de precios referenciales.
+- [ ] `/carrito` para el budín de zapallo italiano (inventario papa, huevo, cebolla, queso) devuelve `$3.180` en `CL` y `3,24 €` en `ES`, con el aviso de precios referenciales. *(Cambio del equipo, 2026-11-06: el aceite pasa a ser básico de cocina, igual que la sal; antes el criterio era la tortilla con `$3.490`. Los valores de control de la sección 8 siguen usando el catálogo de control de los tests.)*
 - [ ] La misma receta se muestra con "palta" en `CL` y con "aguacate" en `MX`.
 - [ ] Ninguna receta sugerida viola la restricción elegida (tests de integridad y del guardián en verde).
 - [ ] Una foto real a `/ingredientes/detectar` devuelve ingredientes normalizados y los dudosos por separado.

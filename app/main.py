@@ -18,7 +18,7 @@ from app.modelos import (MODOS, NIVELES, RESTRICCIONES, Favorito, ItemInventario
                          Restriccion, catalogo_global)
 from app.normalizacion import resolver_ingrediente
 from app.paises import nombre_local, validar_pais
-from app.proveedores import cotizar_compra, proveedores_disponibles
+from app.proveedores import cotizar_carrito_editable, cotizar_compra, proveedores_disponibles
 from app.recetas import calcular_faltantes, detalle_receta, obtener_receta, sugerir_menu
 
 CARPETA_STATIC = configuracion.RAIZ / "app" / "static"
@@ -101,6 +101,22 @@ class PedidoCarrito(BaseModel):
     porciones: int = Field(4, ge=1, le=50)
     pais: str = Field("OTRO", examples=["CL"])
     proveedor: Optional[str] = Field(None, examples=["simulado"])
+
+
+class ProductoCarrito(BaseModel):
+    """Un producto de "Mi carrito". nombre y unidades solo vienen si el usuario los cambió."""
+    ingrediente_id: str = Field(..., max_length=60, examples=["leche"])
+    necesario: float = Field(..., ge=0, le=100000, examples=[250])
+    unidad: str = Field(..., max_length=10, examples=["ml"])
+    nombre: Optional[str] = Field(None, max_length=60, examples=["leche semidescremada"])
+    unidades: Optional[int] = Field(None, ge=1, le=99)
+    recetas: list[str] = Field(default_factory=list, max_length=20)
+
+
+class PedidoMiCarrito(BaseModel):
+    items: list[ProductoCarrito] = Field(default_factory=list, max_length=60)
+    pais: str = Field("OTRO", examples=["CL"])
+    proveedor: Optional[str] = Field(None, examples=["jumbo"])
 
 
 class PedidoResolver(BaseModel):
@@ -225,6 +241,17 @@ def carrito(pedido: PedidoCarrito):
         faltantes = calcular_faltantes(receta, pedido.inventario, pedido.porciones, cat, pais)
         return {"receta_id": receta.id, "faltantes": faltantes,
                 **cotizar_compra(faltantes, pais, pedido.proveedor or configuracion.proveedor_por_defecto(), cat)}
+    except ValueError as e:
+        raise HTTPException(422, str(e))
+
+
+@app.post("/carrito/recalcular")
+def mi_carrito(pedido: PedidoMiCarrito):
+    """Recalcula "Mi carrito" (productos de varias recetas, editables por el usuario)."""
+    cat, pais = catalogo_global(), _pais(pedido.pais)
+    try:
+        return cotizar_carrito_editable([i.model_dump() for i in pedido.items], pais,
+                                        pedido.proveedor or configuracion.proveedor_por_defecto(), cat)
     except ValueError as e:
         raise HTTPException(422, str(e))
 

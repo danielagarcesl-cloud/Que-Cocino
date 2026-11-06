@@ -2,8 +2,7 @@
   "_nota": "Respuestas grabadas para correr el golden set SIN llamar a OpenAI. Sirven para probar que los evaluadores funcionan; no miden al modelo real.",
   "G1": [
     {"tool_calls": [["sugerir_menu", {}]]},
-    {"tool_calls": [["armar_carrito", {"receta_id": "tortilla_de_papas"}]]},
-    {"content": "Ya tienes papa, huevo y cebolla, así que te recomiendo la Tortilla de papas: solo te falta aceite. Comprarlo suma $3.490 (precios referenciales; el enlace abre una búsqueda en el proveedor). Técnica: confita la papa a fuego bajo y cuaja la tortilla jugosa por dentro."}
+    {"content": "Ya tienes papa, huevo y cebolla, así que te recomiendo la Tortilla de papas: tienes todo lo necesario y no hace falta comprar nada. Técnica: confita la papa a fuego bajo y cuaja la tortilla jugosa por dentro."}
   ],
   "G2": [
     {"content": "¡Buena base! Antes de sugerirte algo, ¿cuál es tu nivel de cocina (principiante, intermedio o avanzado) y tienes alguna restricción alimentaria?"}

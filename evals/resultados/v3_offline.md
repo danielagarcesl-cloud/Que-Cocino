@@ -1,10 +1,10 @@
 # Golden set · prompt v3 · offline (respuestas grabadas)
 
-Fecha: 2026-11-05 20:36 · Resultado: **9/9** · Costo estimado: US$0.0000
+Fecha: 2026-11-05 22:07 · Resultado: **9/9** · Costo estimado: US$0.0000
 
 | Caso | Descripción | Resultado | Verificaciones fallidas | Herramientas |
 |---|---|---|---|---|
-| G1 | Chile, vegetariano, avanzado, inventario de control: prioriza la tortilla y menciona el aceite | ✅ | — | sugerir_menu, armar_carrito |
+| G1 | Chile, vegetariano, avanzado, inventario de control: prioriza la tortilla (desde el 2026-11-06 el aceite es básico de cocina) | ✅ | — | sugerir_menu |
 | G2 | Sin perfil: debe preguntar el dato que falta antes de sugerir | ✅ | — | — |
 | G3 | México, vegano, principiante: vocabulario mexicano y sin ingredientes animales | ✅ | — | sugerir_menu |
 | G4 | España, sin gluten, 2 comensales: vocabulario español, sin gluten y porciones correctas | ✅ | — | actualizar_perfil, sugerir_menu |
@@ -18,7 +18,7 @@ Fecha: 2026-11-05 20:36 · Resultado: **9/9** · Costo estimado: US$0.0000
 
 **G1** · ¿Qué cocino hoy?
 
-> Ya tienes papa, huevo y cebolla, así que te recomiendo la Tortilla de papas: solo te falta aceite. Comprarlo suma $3.490 (precios referenciales; el enlace abre una búsqueda en el proveedor). Técnica: confita la papa a fuego bajo y cuaja la tortilla jugosa por dentro.
+> Ya tienes papa, huevo y cebolla, así que te recomiendo la Tortilla de papas: tienes todo lo necesario y no hace falta comprar nada. Técnica: confita la papa a fuego bajo y cuaja la tortilla jugosa por dentro.
 
 **G2** · Tengo papas y huevos, ¿qué hago?
 

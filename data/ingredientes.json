@@ -78,7 +78,7 @@
     "categoria": "despensa",
     "unidad_base": "ml",
     "etiquetas": [],
-    "es_basico": false
+    "es_basico": true
   },
   {
     "id": "zapallo_italiano",

@@ -1,12 +1,12 @@
 [
   {
     "id": "G1",
-    "descripcion": "Chile, vegetariano, avanzado, inventario de control: prioriza la tortilla y menciona el aceite",
+    "descripcion": "Chile, vegetariano, avanzado, inventario de control: prioriza la tortilla (desde el 2026-11-06 el aceite es básico de cocina)",
     "entrada": {"mensaje": "¿Qué cocino hoy?",
       "contexto": {"perfil": {"pais": "CL", "nivel": "avanzado", "restriccion": "vegetariano", "porciones": 4,
         "modo": "completar_comprando", "inventario": ["papa", "huevo", "cebolla", "queso"]}, "favoritos": []}},
     "esperado": {"herramientas_requeridas": ["sugerir_menu"], "recetas_requeridas": ["tortilla_de_papas"],
-      "restriccion_respetada": "vegetariano", "palabras_requeridas_todas": ["aceite"], "guardian_sin_plantilla": true,
+      "restriccion_respetada": "vegetariano", "palabras_requeridas_todas": ["tortilla"], "guardian_sin_plantilla": true,
       "formato_moneda": "CL"}
   },
   {

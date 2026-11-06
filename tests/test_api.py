@@ -44,11 +44,16 @@ def test_menu_nivel_invalido():
 
 
 def test_carrito_cl_y_es():
-    base = {"receta_id": "tortilla_de_papas", "inventario": INV, "porciones": 4}
+    # Desde el 2026-11-06 el aceite es básico de cocina: a la tortilla no le falta nada
+    # y el ejemplo de carrito pasa a ser el budín (zapallo italiano + leche).
+    tortilla = cliente_http.post("/carrito", json={"receta_id": "tortilla_de_papas", "inventario": INV,
+                                                    "porciones": 4, "pais": "CL"}).json()
+    assert tortilla["items"] == [] and tortilla["total"] == 0
+    base = {"receta_id": "budin_de_zapallo_italiano", "inventario": INV, "porciones": 4}
     cl = cliente_http.post("/carrito", json={**base, "pais": "CL"}).json()
     es = cliente_http.post("/carrito", json={**base, "pais": "ES"}).json()
-    assert cl["total_formateado"] == "$3.490" and cl["aviso"] == "Precios referenciales"
-    assert es["total_formateado"] == "3,49 €"
+    assert cl["total_formateado"] == "$3.180" and cl["aviso"] == "Precios referenciales"
+    assert es["total_formateado"] == "3,24 €"
 
 
 def test_carrito_receta_inexistente():
@@ -70,7 +75,7 @@ def test_favoritos_endpoints():
     assert cliente_http.post("/favoritos/guardar", json={"favoritos": cien, "receta_id": "gazpacho", "carpeta": "C1"}).status_code == 422
     rep = cliente_http.post("/favoritos/repetir", json={"favoritos": favs, "receta_id": "tortilla_de_papas",
                                                         "inventario": INV, "pais": "CL"}).json()
-    assert rep["carrito"]["total_formateado"] == "$3.490" and rep["favoritos"][0]["veces_preparada"] == 1
+    assert rep["carrito"]["items"] == [] and rep["favoritos"][0]["veces_preparada"] == 1  # aceite es básico
     lst = cliente_http.post("/favoritos/listar", json={"favoritos": favs + [{"receta_id": "borrada"}],
                                                        "perfil": {"restriccion": "vegano"}}).json()
     assert lst["descartados"] == ["borrada"] and lst["favoritas"][0]["compatible_con_perfil"] is False
@@ -135,3 +140,12 @@ def test_sin_saldo_en_ia_da_mensaje_claro():
     for r in (r_chat, r_foto):
         assert r.status_code == 503
         assert "no tiene saldo" in r.json()["detail"]
+
+
+def test_mi_carrito_endpoint():
+    r = cliente_http.post("/carrito/recalcular", json={"pais": "CL", "proveedor": "jumbo", "items": [
+        {"ingrediente_id": "leche", "necesario": 250, "unidad": "ml", "recetas": ["Budín de zapallo italiano"]}]})
+    assert r.status_code == 200 and r.json()["items"][0]["url"].startswith("https://www.jumbo.cl/")
+    malo = cliente_http.post("/carrito/recalcular", json={"pais": "CL", "items": [
+        {"ingrediente_id": "leche", "necesario": 1, "unidad": "l", "nombre": "x" * 200}]})
+    assert malo.status_code == 422
