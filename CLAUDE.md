@@ -104,8 +104,8 @@ docker run -p 8080:8080 -e OPENAI_API_KEY quecocino:1.0
 | 5 · Orquestador | ✅ | 10 herramientas, tope de 8 pasos, traza con costo |
 | 6 · Guardián y límites | ✅ | 1 reintento y luego plantilla segura; límites diarios por IP |
 | 7 · API y web | ✅ | Probado en celular simulado (iPhone 13): foto/lista → recetas → carrito → favoritas, incluso sin conexión |
-| 8 · Prueba real y golden set | ✅ | Modelo real: agente v1 5/9 → v2 9/9 y 8/9 → **v3 9/9 en 3 corridas (activa)**. Foto real y chat real OK (US$0,004 y US$0,001). Visión v1 confunde algunos alimentos: candidata a v2. La imagen Docker/kind aún tiene v1: hay que reconstruirla |
+| 8 · Prueba real y golden set | ✅ | Modelo real: agente v1 5/9 → v2 9/9 y 8/9 → **v3 9/9 en 3 corridas (activa)**. Foto real y chat real OK (US$0,004 y US$0,001). Visión v1 confunde algunos alimentos: candidata a v2. Imagen Docker/kind reconstruida con v3 |
 | 9 · Docker | ✅ | Imagen `quecocino:1.0` de 243 MB; corre como usuario sin privilegios (10001), sin `.env` adentro; /health y /menu/sugerir responden en el contenedor |
 | 10 · Kubernetes | ✅ | Clúster kind `quecocino-lab` (1 control + 2 workers); 2 pods `Running 1/1`, uno por worker; Secret creado desde `.env`; port-forward responde `"entorno":"kind"` |
 | 11 · GitHub | ✅ | Subido a github.com/danielagarcesl-cloud/Que-Cocino (4 nov), 74 archivos, sin `.env` ni `secret.yaml`; CI #1 en verde (59 s) |
-| 12 · Nube | ⏳ pendiente | deploy-cloudrun.yml y heroku.yml listos |
+| 12 · Nube | ✅ | Cloud Run (5 nov), proyecto `que-cocino-513900`, región southamerica-west1: https://quecocino-470183917229.southamerica-west1.run.app · llave en Secret Manager, 0–3 instancias, 512 MiB; `.env` no subido. Probado /health, recetas, agente real, web en tamaño celular y en un celular real del equipo. Falta confirmar el límite de US$60 en OpenAI |
